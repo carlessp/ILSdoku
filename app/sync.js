@@ -100,10 +100,10 @@ if (!configurat) {
     onAuthStateChanged(auth, async function (user) {
       uid = user ? user.uid : null;
       if (!user) {
-        avis({ signedIn: false, who: "", detail: "" });
+        avis({ ready: true, signedIn: false, who: "", detail: "" });
         return;
       }
-      avis({ signedIn: true, who: user.email || user.displayName || "", detail: "connectat" });
+      avis({ ready: true, signedIn: true, who: user.email || user.displayName || "", detail: "connectat" });
       await puja(false);
     });
 

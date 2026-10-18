@@ -14,7 +14,7 @@
 (function () {
   "use strict";
 
-  var ESTAT = { configured: false, signedIn: false, who: "", detail: "", busy: false };
+  var ESTAT = { configured: false, signedIn: false, who: "", detail: "", busy: false, ready: false };
   var api = null;
   var subs = [];
   var invitFeta = false;
@@ -48,7 +48,7 @@
     },
     update: function (info) {
       if (!info) return;
-      ["configured", "signedIn", "busy"].forEach(function (k) {
+      ["configured", "signedIn", "busy", "ready"].forEach(function (k) {
         if (info[k] != null) ESTAT[k] = !!info[k];
       });
       ["who", "detail"].forEach(function (k) { if (info[k] != null) ESTAT[k] = info[k]; });
@@ -152,11 +152,12 @@
   }
 
   function potserInvitacio() {
-    if (invitFeta || !ESTAT.configured || ESTAT.signedIn) return;
-    if (!document.body.classList.contains("landing")) return;   // només a la portada
+    if (ESTAT.signedIn) { tanca("modal-invit"); return; }        // si entra, no hi insistim
+    if (invitFeta || !ESTAT.configured || !ESTAT.ready) return;  // cal saber del cert que no hi ha sessió
+    if (!document.body.classList.contains("landing")) return;    // només a la portada
     if (silenciada()) return;
     invitFeta = true;
-    window.setTimeout(function () { obre("modal-invit"); }, 600);
+    window.setTimeout(function () { if (!ESTAT.signedIn) obre("modal-invit"); }, 600);
   }
 
   function openModalCompte() {
@@ -204,6 +205,11 @@
   function inici() {
     construeix();
     pinta();
+    // xarxa de seguretat: si al cap de 6 s ningú no ha resolt la sessió, no
+    // bloquegem la invitació per sempre més
+    window.setTimeout(function () {
+      if (!ESTAT.ready && ESTAT.configured) { ESTAT.ready = true; potserInvitacio(); }
+    }, 6000);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", inici);
   else inici();
