@@ -20,11 +20,13 @@ const SDK = "https://www.gstatic.com/firebasejs/11.6.0/";
 
 function avis(o) {
   if (window.ILSDOKU_SYNC_INFO) window.ILSDOKU_SYNC_INFO(o);
+  if (window.ILSDOKU_ACCOUNT) window.ILSDOKU_ACCOUNT.update(o);
 }
 
 if (!configurat) {
   /* Sense configuració: el botó explica què cal fer. */
   if (window.ILSDOKU_REGISTER_SYNC) window.ILSDOKU_REGISTER_SYNC({ available: false });
+  if (window.ILSDOKU_ACCOUNT) window.ILSDOKU_ACCOUNT.register({ available: false });
 } else {
   try {
     const { initializeApp } = await import(SDK + "firebase-app.js");
@@ -76,24 +78,24 @@ if (!configurat) {
       }
     }
 
-    if (window.ILSDOKU_REGISTER_SYNC) {
-      window.ILSDOKU_REGISTER_SYNC({
-        available: true,
-        signedIn: false,
-        who: "",
-        signIn: async function () {
-          const provider = new GoogleAuthProvider();
-          provider.setCustomParameters({ prompt: "select_account" });
-          try {
-            await signInWithPopup(auth, provider);
-          } catch (e) {
-            alert("No s'ha pogut iniciar la sessió: " + (e && e.message ? e.message : e));
-          }
-        },
-        signOut: function () { signOut(auth); },
-        push: function (manual) { puja(manual); }
-      });
-    }
+    const API = {
+      available: true,
+      signedIn: false,
+      who: "",
+      signIn: async function () {
+        const provider = new GoogleAuthProvider();
+        provider.setCustomParameters({ prompt: "select_account" });
+        try {
+          await signInWithPopup(auth, provider);
+        } catch (e) {
+          alert("No s'ha pogut iniciar la sessió: " + (e && e.message ? e.message : e));
+        }
+      },
+      signOut: function () { signOut(auth); },
+      push: function (manual) { puja(manual); }
+    };
+    if (window.ILSDOKU_REGISTER_SYNC) window.ILSDOKU_REGISTER_SYNC(API);
+    if (window.ILSDOKU_ACCOUNT) window.ILSDOKU_ACCOUNT.register(API);
 
     onAuthStateChanged(auth, async function (user) {
       uid = user ? user.uid : null;

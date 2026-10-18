@@ -86,6 +86,17 @@ en tornar a obrir el cas. Tot es veu i es gestiona al botó **📈 Progrés**:
 - **Reinicia el progrés** (només d'aquest navegador) i un **sobrenom** opcional.
 - El rellotge de la partida surt a la capçalera del tauler (`⏱`).
 
+**Compte i sessió (sempre visible).** Al topbar de la portada i del joc hi ha
+l'indicador de compte (`app/account.js`): «👤 Inicia sessió» quan no hi ha sessió,
+el compte amb un punt verd quan sí. En clicar-lo s'obre el modal del compte
+(sincronitzar ara, tancar la sessió i, al joc, «📈 El meu progrés»).
+
+**Invitació a la portada.** Si el núvol està configurat i no hi ha sessió, en
+carregar **la portada** surt una invitació («Guarda el teu progrés») amb el botó
+d'iniciar sessió i un «Ara no» que la silencia **12 h** en aquell navegador (clau
+`ilsdoku.invit.descartada`; perquè surti sempre, esborra-la o posa `HORES_SILENCI
+= 0` a `account.js`). Al joc no surt mai: només hi queda l'indicador del topbar.
+
 **Sincronització amb Firebase (opcional).** Amb comptes de Google i Firestore, el
 progrés viatja entre dispositius. Sense configurar, el botó ho explica i el joc
 funciona igual.
@@ -260,6 +271,8 @@ resposta (vegeu `../ref/ILSdoku-Disseny.md`, §5.1).
 - ✅ **Progrés del jugador**: casos resolts amb millor temps, pistes i enviaments, partida
   en curs que es reprèn, exportació/importació i ⟳ opcional amb Firebase (comptes de
   Google) per tenir-ho sincronitzat entre dispositius. Vegeu § «Progrés i sincronització».
+- ✅ **Compte sempre visible** (indicador al topbar de la portada i del joc) i
+  **invitació a iniciar sessió** en carregar la portada si no hi ha sessió.
 - ✅ **Glossari** d'objectes i símbols (modal) i **X automàtiques** de fila/columna/centre.
 - ✅ **Bombolla d'ajuda** en passar el cursor per una casella: diu quin objecte és
   (i si és ocupable), quina ILS hi ha col·locada, les notes, el centre amb la seva

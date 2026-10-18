@@ -185,6 +185,19 @@
   function renderSync() {
     var cos = document.getElementById("progress-account");
     if (!cos) return;
+    if (window.ILSDOKU_ACCOUNT) {
+      // El compte es gestiona des del mòdul compartit (account.js): aquí només
+      // se'n mostra l'estat i un botó per obrir-lo.
+      var st = window.ILSDOKU_ACCOUNT.state();
+      var linia = !st.configured ? "La sincronització amb el núvol no està configurada."
+        : (st.signedIn ? "Sessió iniciada com a <strong>" + (st.who || "compte de Google") + "</strong>."
+                       : "Encara no has iniciat sessió.");
+      cos.innerHTML = "<p>" + linia + "</p>" +
+        "<p><button class='tool ghost' id='pg-compte'>Gestiona el compte</button></p>";
+      var b = document.getElementById("pg-compte");
+      if (b) b.addEventListener("click", function () { window.ILSDOKU_ACCOUNT.openAccount(); });
+      return;
+    }
     var h = "";
     if (!syncInfo.configured) {
       h = "<p class='pg-dim'>La sincronització amb el núvol encara no està configurada. " +

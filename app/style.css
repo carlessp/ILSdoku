@@ -516,3 +516,21 @@ kbd {
   border-radius: 8px; background: #fff; max-width: 240px;
 }
 #case-timer { font-variant-numeric: tabular-nums; }
+
+/* ------------------------------------------------------------------ *
+ * Compte: indicador del topbar i invitació a iniciar sessió.
+ * Es veu sempre si estàs dins o no (portada i joc).
+ * ------------------------------------------------------------------ */
+.account { display: flex; align-items: center; }
+.acct { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.acct.off { color: var(--ink-soft); font-size: .82rem; padding: 4px 8px; }
+.acct .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #3ba55d; box-shadow: 0 0 0 2px rgba(59,165,93,.22);
+  display: inline-block;
+}
+.invit-llista { margin: 0 0 10px; padding-left: 20px; }
+.invit-llista li { margin-bottom: 6px; }
+.invit-accions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.invit-accions .tool.primary { font-weight: 700; }
+@media print { .account { display: none !important; } }
