@@ -1,0 +1,163 @@
+/* ==========================================================================
+   ILSdoku — fulls imprimibles (plantilles)
+   S'usa juntament amb style.css (variables, tauler, targetes, glossari).
+   ========================================================================== */
+
+* { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+body { background: var(--bg); }
+
+/* ---------- Barra d'opcions (només pantalla) ---------- */
+.opt {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .88rem; color: var(--ink); cursor: pointer;
+  padding: 6px 10px; border: 1px solid var(--line); border-radius: 9px;
+  background: #fbfaf7;
+}
+.opt input { accent-color: var(--accent); }
+.no-print .tool, .no-print .opt, .no-print .case-picker label { white-space: nowrap; }
+
+/* ---------- Full A4 ---------- */
+.sheet {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 12mm 14mm;
+  margin: 16px auto;
+  background: #fff;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.sheet + .sheet { break-before: page; }
+
+.sheet-head {
+  display: flex; align-items: baseline; gap: 10px;
+  border-bottom: 2px solid var(--line-strong);
+  padding-bottom: 6px; margin-bottom: 10px;
+}
+.sheet-head .logo {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 8px;
+  background: var(--accent); color: #fff; font-weight: 800; font-size: .8rem;
+}
+.sheet-head h1 {
+  font-size: 1.15rem; margin: 0; letter-spacing: .2px;
+}
+.sheet-head .meta {
+  margin-left: auto; font-size: .78rem; color: var(--ink-soft);
+  text-transform: uppercase; letter-spacing: .6px; font-weight: 700;
+  text-align: right;
+}
+.sheet-name {
+  display: flex; gap: 18px; font-size: .8rem; color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+.sheet-name .fill { flex: 1; border-bottom: 1px solid var(--line); }
+
+/* ---------- Regles ---------- */
+.rules {
+  border: 1px solid var(--line); border-radius: 10px;
+  background: #fbfaf7; padding: 6px 10px 6px 24px;
+  font-size: .76rem; line-height: 1.3; margin: 0 0 8px;
+}
+.rules li { margin-bottom: 2px; }
+.rules strong { color: var(--accent); }
+
+/* ---------- Tauler amb coordenades ---------- */
+.board-grid {
+  display: grid;
+  grid-template-columns: 7mm repeat(var(--n, 7), 1fr);
+  grid-template-rows: 5mm repeat(var(--n, 7), 1fr);
+  width: min(100%, 150mm);
+  margin: 0 auto 8px;
+}
+.board-grid .rc {
+  display: flex; align-items: center; justify-content: center;
+  font-size: .58rem; font-weight: 800; color: var(--ink-soft);
+  letter-spacing: .3px;
+}
+.board-grid .board {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  width: 100%;
+  border-radius: 6px;
+}
+.board-grid .board .cell { cursor: default; }
+.board-grid .board .obj-img { inset: 7%; width: 86%; height: 86%; }
+.board-grid .board .obj-span {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.board-grid .board .obj-span img {
+  width: 100%; height: 100%;
+  object-fit: fill;      /* el banc 2×1 s'estira a tot el rectangle */
+  transform: scale(1, 1.65);
+}
+.board-grid .board .place {
+  inset: 6%; border: 1px solid rgba(0,0,0,.35);
+  font-size: .8rem; letter-spacing: .3px;
+}
+.board-grid .board .centre-label > div { font-size: .5rem; padding: 2px 5px; }
+.board-grid .board .centre-label .demand { font-size: .95em; padding: 0 4px; }
+
+/* ---------- Llistes (candidates / col·locacions) ---------- */
+.sheet h2 {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .8px;
+  color: var(--ink-soft); margin: 12px 0 6px;
+  border-bottom: 1px solid var(--line); padding-bottom: 3px;
+}
+.two-cols { columns: 2; column-gap: 16px; }
+.mini {
+  break-inside: avoid; display: flex; gap: 8px; align-items: baseline;
+  font-size: .79rem; line-height: 1.25; padding: 2px 0;
+  border-bottom: 1px dotted rgba(74,68,59,.25);
+}
+.mini .who { font-weight: 700; flex: 0 0 auto; }
+.mini .torn {
+  font-size: .62rem; text-transform: uppercase; letter-spacing: .4px;
+  padding: 1px 6px; border-radius: 999px; border: 1px solid;
+}
+.mini .torn.mati  { background: #eaf3fc; color: #2b6cb0; border-color: #cfe2f5; }
+.mini .torn.tarda { background: #fbeee0; color: #a5602a; border-color: #f0d8bf; }
+.mini .clue { color: var(--ink-soft); flex: 1; }
+.mini .clue.none { font-style: italic; }
+
+/* ---------- Glossari ---------- */
+.gloss-print {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+}
+.gp-item {
+  display: flex; gap: 8px; align-items: center;
+  border: 1px solid var(--line); border-radius: 8px; padding: 5px 7px;
+  background: #fbfaf7; break-inside: avoid;
+}
+.gp-item.occ { border-color: #cfe4d9; background: #f2f9f5; }
+.gp-item img { width: 40px; height: 40px; object-fit: contain; flex: 0 0 auto; }
+.gp-item .gp-t { min-width: 0; }
+.gp-item .gp-n { font-weight: 700; font-size: .74rem; }
+.gp-item .gp-d { font-size: .64rem; color: var(--ink-soft); line-height: 1.2; }
+
+/* ---------- Solució ---------- */
+.solution-note {
+  font-size: .86rem; border-left: 4px solid var(--accent-2);
+  background: #fdf4ec; padding: 7px 10px; border-radius: 0 8px 8px 0;
+  margin: 10px 0 0;
+}
+.solution-note strong { color: var(--accent-2); }
+.solution-note .reveal { display: block; margin-top: 4px; color: #4a443b; }
+
+/* ---------- Impressió ---------- */
+@page { size: A4 portrait; margin: 0; }
+@media print {
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  .sheet {
+    width: auto; min-height: 0; margin: 0;
+    padding: 12mm 14mm; box-shadow: none;
+  }
+  .sheet + .sheet { break-before: page; }
+  .sheet:last-child { break-after: auto; }
+}

@@ -1,0 +1,201 @@
+{
+ "id": "la-benvinguda",
+ "title": "La benvinguda",
+ "difficulty": "molt fàcil",
+ "n": 5,
+ "mati_rows": [
+  0,
+  1,
+  2
+ ],
+ "mode": null,
+ "allowed_types": [
+  "beside",
+  "notRoom",
+  "notbeside",
+  "on",
+  "onNone",
+  "onlyon",
+  "room"
+ ],
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "cols": [
+    0,
+    1,
+    2
+   ],
+   "demand": 2
+  },
+  {
+   "id": "ind",
+   "name": "EA La Industrial",
+   "short": "La Industrial",
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "cols": [
+    3,
+    4
+   ],
+   "demand": 1
+  },
+  {
+   "id": "seg",
+   "name": "Institut Salvador Seguí",
+   "short": "Salvador Seguí",
+   "rows": [
+    3,
+    4
+   ],
+   "cols": [
+    0,
+    1,
+    2
+   ],
+   "demand": 1
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    3,
+    4
+   ],
+   "cols": [
+    3,
+    4
+   ],
+   "demand": 1
+  }
+ ],
+ "ils": [
+  {
+   "name": "Oscar",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "O"
+  },
+  {
+   "name": "Judit",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "J"
+  },
+  {
+   "name": "María Nuria",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "MN"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Tatiana",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "T"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,4": "Pissarra",
+  "1,1": "Cadira",
+  "1,4": "Taula",
+  "2,0": "Catifa",
+  "2,1": "Estoreta",
+  "3,3": "Banc",
+  "3,4": "Banc",
+  "4,0": "Estoreta",
+  "4,1": "Banc",
+  "4,2": "Banc",
+  "4,3": "Rellotge"
+ },
+ "target": {
+  "Oscar": [
+   0,
+   3
+  ],
+  "Judit": [
+   2,
+   1
+  ],
+  "María Nuria": [
+   1,
+   2
+  ],
+  "Aroha": [
+   4,
+   0
+  ],
+  "Tatiana": [
+   3,
+   4
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "on",
+   "i": 1,
+   "obj": "Estoreta"
+  },
+  {
+   "type": "on",
+   "i": 3,
+   "obj": "Estoreta"
+  },
+  {
+   "type": "beside",
+   "i": 0,
+   "obj": "Pissarra"
+  },
+  {
+   "type": "onlyon",
+   "i": 4,
+   "obj": "Banc"
+  },
+  {
+   "type": "onNone",
+   "i": 2,
+   "obj": "Catifa"
+  },
+  {
+   "type": "notRoom",
+   "i": 5,
+   "cen": "fep"
+  }
+ ],
+ "reveal": "L'última plaça lliure era R2 C3, al FEP Aprenents EE. María Nuria hi podia seure, i Laura M no, perquè no era enlloc del FEP Aprenents EE. Per això Laura M es queda sense plaça.",
+ "object_spans": {
+  "3,3": [
+   2,
+   1
+  ],
+  "4,1": [
+   2,
+   1
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ILSdoku — plantilles imprimibles</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="print.css">
+</head>
+<body>
+
+<header class="topbar no-print">
+  <a class="brand" href="index.html" title="Ves a la portada">
+    <span class="logo">IL</span>
+    <span>ILSdoku</span>
+    <small>plantilles per imprimir</small>
+  </a>
+  <div class="spacer"></div>
+  <div class="case-picker">
+    <label for="print-case">Cas:</label>
+    <select id="print-case"></select>
+  </div>
+  <label class="opt"><input type="checkbox" id="opt-solution" checked> Solució</label>
+  <label class="opt"><input type="checkbox" id="opt-glossary" checked> Glossari</label>
+  <button class="tool primary" id="btn-print">🖨️ Imprimir / Desar PDF</button>
+  <a class="tool ghost" href="joc.html" style="text-decoration:none">← Torna al joc</a>
+</header>
+
+<div id="sheets"></div>
+
+<script src="data.js"></script>
+<script src="print.js"></script>
+</body>
+</html>

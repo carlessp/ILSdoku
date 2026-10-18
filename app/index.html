@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ILSdoku — qui es queda sense plaça?</title>
+<meta name="description" content="Joc de lògica deductiva: reparteix els intèrprets de llengua de signes (ILS) pels centres educatius i descobreix qui es queda sense plaça.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body class="landing">
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">IL</span>
+    <span>ILSdoku</span>
+    <small>quadra l'horari de les ILS</small>
+  </div>
+  <div class="spacer"></div>
+  <nav class="topnav" aria-label="Recursos">
+    <a class="tool ghost" href="joc.html?ajuda">❓ Com s'hi juga</a>
+    <a class="tool ghost" href="joc.html?glossari">📖 Glossari</a>
+    <a class="tool ghost" href="plantilla.html">🖨️ Plantilles</a>
+  </nav>
+  <a class="tool primary" id="cta-top" href="joc.html">▶ Juga</a>
+</header>
+
+<main class="landing-main">
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Joc de lògica · centres educatius</p>
+      <h1 class="display reveal">
+        ILSdoku
+        <span class="hero-question">Qui es queda sense plaça?</span>
+      </h1>
+      <p class="lead reveal">
+        Reparteix els <strong>intèrprets de llengua de signes</strong> pels centres
+        respectant totes les pistes. Quan quadris l'horari, sabràs
+        <strong>qui no té lloc</strong>.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn primary big" id="cta-hero" href="joc.html">Comença pel primer cas</a>
+        <a class="btn ghost big" href="joc.html?ajuda">Com s'hi juga</a>
+      </div>
+      <p class="hero-stats reveal" id="hero-stats" aria-live="polite"></p>
+    </div>
+
+    <div class="hero-art reveal" aria-hidden="true">
+      <div class="mini-frame">
+        <div class="mini" id="mini-board"></div>
+      </div>
+      <div class="stamp">HORARIS · CENTRES · DEDUCCIÓ</div>
+      <div class="tape" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ======================= NIVELLS ======================= -->
+  <section class="levels reveal" id="nivells">
+    <header class="section-head">
+      <h2 class="display">Tria el teu nivell</h2>
+      <p>De taulers petits per començar als grans de veritat. Cada nivell anirà sumant casos nous.</p>
+    </header>
+
+    <nav class="level-nav" id="level-nav" aria-label="Selector de nivells"></nav>
+    <div class="levels-list" id="levels-list"></div>
+
+    <noscript>
+      <p class="notice">Cal JavaScript per veure el selector de casos. Consulta les
+      <a href="joc.html?ajuda">instruccions</a> o les <a href="plantilla.html">plantilles</a>.</p>
+    </noscript>
+  </section>
+
+  <!-- ======================= COM FUNCIONA ======================= -->
+  <section class="steps reveal" id="com-funciona">
+    <header class="section-head">
+      <h2 class="display">Treball de camp, en tres passes</h2>
+    </header>
+    <ol class="step-list">
+      <li class="step">
+        <span class="step-num">01</span>
+        <h3>Llegeix les pistes</h3>
+        <p>Cada ILS porta una targeta: torn, companyia, objectes, llocs… Totes les pistes són certes.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">02</span>
+        <h3>Quadra el tauler</h3>
+        <p>Una ILS per fila i per columna, i cada centre amb les places exactes que demana.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">03</span>
+        <h3>Troba qui queda fora</h3>
+        <p>Hi ha una candidata de més. L'última plaça lliure la desemmascararà.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ======================= RECURSOS ======================= -->
+  <section class="resources reveal" id="recursos">
+    <header class="section-head">
+      <h2 class="display">Per jugar bé</h2>
+    </header>
+    <div class="res-grid">
+      <a class="res-card" href="joc.html?ajuda">
+        <span class="res-ic">❓</span>
+        <h3>Com s'hi juga</h3>
+        <p>Regles del tauler, controls i consells per enfrontar-se al primer cas.</p>
+        <span class="res-go">Obre les instruccions →</span>
+      </a>
+      <a class="res-card" href="joc.html?glossari">
+        <span class="res-ic">📖</span>
+        <h3>Glossari</h3>
+        <p>Què és cada objecte del tauler: quins es poden ocupar i quins no.</p>
+        <span class="res-go">Consulta el vocabulari →</span>
+      </a>
+      <a class="res-card" href="plantilla.html">
+        <span class="res-ic">🖨️</span>
+        <h3>Plantilles</h3>
+        <p>Fulls A4 per imprimir o per desar en PDF, amb l'enunciat, el glossari i la solució.</p>
+        <span class="res-go">Prepara una partida de paper →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="landing-foot">
+  <p>
+    ILSdoku · un joc de deducció sobre els horaris de les <abbr title="intèrprets de llengua de signes">ILS</abbr> als centres educatius.
+    <span class="sep">·</span>
+    <a href="joc.html?ajuda">Instruccions</a>
+    <span class="sep">·</span>
+    <a href="joc.html?glossari">Glossari</a>
+    <span class="sep">·</span>
+    <a href="plantilla.html">Plantilles</a>
+  </p>
+</footer>
+
+<script src="data.js"></script>
+<script src="landing.js"></script>
+</body>
+</html>

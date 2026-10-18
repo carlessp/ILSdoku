@@ -1,0 +1,253 @@
+{
+ "id": "lhora-destudi",
+ "title": "L'hora d'estudi",
+ "difficulty": "fàcil",
+ "n": 6,
+ "mati_rows": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "mode": "extended",
+ "allowed_types": [
+  "alone",
+  "beside",
+  "cornerGrid",
+  "inCorner",
+  "notCorner",
+  "notRoom",
+  "notbeside",
+  "on",
+  "onNone",
+  "onlyon",
+  "room",
+  "withChar"
+ ],
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    0,
+    1
+   ],
+   "demand": 1
+  },
+  {
+   "id": "ali",
+   "name": "Institut dels Aliments",
+   "short": "Inst. dels Aliments",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    2,
+    3,
+    4
+   ],
+   "demand": 2
+  },
+  {
+   "id": "ind",
+   "name": "EA La Industrial",
+   "short": "La Industrial",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    5
+   ],
+   "demand": 1
+  },
+  {
+   "id": "esc",
+   "name": "INS Escola del Treball",
+   "short": "Escola del Treball",
+   "rows": [
+    4,
+    5
+   ],
+   "cols": [
+    0,
+    1,
+    2
+   ],
+   "demand": 1
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    4,
+    5
+   ],
+   "cols": [
+    3,
+    4,
+    5
+   ],
+   "demand": 1
+  }
+ ],
+ "ils": [
+  {
+   "name": "Oscar",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "O"
+  },
+  {
+   "name": "José Javier",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "JJ"
+  },
+  {
+   "name": "Marc",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "Mc"
+  },
+  {
+   "name": "Judit",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "J"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Tatiana",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "T"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,2": "Banc",
+  "0,3": "Banc",
+  "1,2": "Banc",
+  "1,3": "Banc",
+  "1,4": "Pissarra",
+  "2,2": "Estoreta",
+  "2,3": "Banc",
+  "2,4": "Banc",
+  "3,3": "Cadira",
+  "3,4": "Catifa",
+  "4,1": "Cadira",
+  "5,1": "Estoreta",
+  "5,2": "Rellotge",
+  "5,5": "Lavabo"
+ },
+ "target": {
+  "Oscar": [
+   1,
+   5
+  ],
+  "José Javier": [
+   0,
+   2
+  ],
+  "Marc": [
+   2,
+   3
+  ],
+  "Judit": [
+   3,
+   1
+  ],
+  "Aroha": [
+   5,
+   0
+  ],
+  "Tatiana": [
+   4,
+   4
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "cornerGrid",
+   "i": 4
+  },
+  {
+   "type": "beside",
+   "i": 2,
+   "obj": "Cadira"
+  },
+  {
+   "type": "inCorner",
+   "i": 3
+  },
+  {
+   "type": "notCorner",
+   "i": 5
+  },
+  {
+   "type": "on",
+   "i": 1,
+   "obj": "Banc"
+  },
+  {
+   "type": "inCorner",
+   "i": 1
+  },
+  {
+   "type": "onNone",
+   "i": 0,
+   "obj": "Catifa"
+  },
+  {
+   "type": "notRoom",
+   "i": 6,
+   "cen": "ind"
+  },
+  {
+   "type": "room",
+   "i": 3,
+   "cen": "fep"
+  }
+ ],
+ "reveal": "L'última plaça lliure era R2 C6, a l'EA La Industrial. Oscar hi podia seure, i Laura M no, perquè no era enlloc de l'EA La Industrial. Per això Laura M es queda sense plaça.",
+ "object_spans": {
+  "0,2": [
+   2,
+   1
+  ],
+  "1,2": [
+   2,
+   1
+  ],
+  "2,3": [
+   2,
+   1
+  ]
+ }
+}

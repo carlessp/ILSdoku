@@ -1,0 +1,319 @@
+{
+ "id": "setmana-cultural",
+ "title": "La setmana cultural",
+ "difficulty": "difícil",
+ "n": 9,
+ "mati_rows": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "mode": "extended",
+ "allowed_types": [
+  "beside",
+  "cornerGrid",
+  "inCorner",
+  "notCorner",
+  "notRoom",
+  "notbeside",
+  "on",
+  "onNone",
+  "room"
+ ],
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 1
+  },
+  {
+   "id": "seg",
+   "name": "Institut Salvador Seguí",
+   "short": "Salvador Seguí",
+   "rows": [
+    2,
+    3
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 1
+  },
+  {
+   "id": "ind",
+   "name": "EA La Industrial",
+   "short": "La Industrial",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "demand": 2
+  },
+  {
+   "id": "esc",
+   "name": "INS Escola del Treball",
+   "short": "Escola del Treball",
+   "rows": [
+    4,
+    5
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "demand": 1
+  },
+  {
+   "id": "ali",
+   "name": "Institut dels Aliments",
+   "short": "Inst. dels Aliments",
+   "rows": [
+    6,
+    7
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "demand": 1
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "cols": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "demand": 3
+  }
+ ],
+ "ils": [
+  {
+   "name": "Oscar",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "O"
+  },
+  {
+   "name": "Carla",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "C"
+  },
+  {
+   "name": "Joan",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "Jn"
+  },
+  {
+   "name": "Judit",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "J"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Miriam",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "M"
+  },
+  {
+   "name": "Tatiana",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "T"
+  },
+  {
+   "name": "Irene",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "I"
+  },
+  {
+   "name": "Laura G",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "LG"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,0": "Banc",
+  "0,4": "Estoreta",
+  "0,7": "Banc",
+  "1,2": "Estoreta",
+  "1,7": "Cadira",
+  "2,1": "Estoreta",
+  "2,4": "Prestatge",
+  "2,7": "Pissarra",
+  "2,8": "Màquina de cafè",
+  "4,2": "Lavabo",
+  "4,5": "Estoreta",
+  "4,8": "Màquina de cafè",
+  "5,1": "Pissarra",
+  "5,7": "Banc",
+  "5,8": "Rellotge",
+  "6,3": "Lavabo",
+  "6,8": "Lavabo",
+  "7,2": "Prestatge",
+  "7,5": "Ordinador",
+  "7,6": "Màquina de cafè",
+  "7,7": "Taula",
+  "7,8": "Màquina de cafè",
+  "8,1": "Rellotge",
+  "8,5": "Lavabo",
+  "8,6": "Estoreta"
+ },
+ "target": {
+  "Oscar": [
+   0,
+   2
+  ],
+  "Carla": [
+   1,
+   6
+  ],
+  "Joan": [
+   2,
+   1
+  ],
+  "Judit": [
+   3,
+   4
+  ],
+  "Aroha": [
+   7,
+   0
+  ],
+  "Miriam": [
+   4,
+   5
+  ],
+  "Tatiana": [
+   8,
+   8
+  ],
+  "Irene": [
+   5,
+   3
+  ],
+  "Laura G": [
+   6,
+   7
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "cornerGrid",
+   "i": 6
+  },
+  {
+   "type": "on",
+   "i": 5,
+   "obj": "Estoreta"
+  },
+  {
+   "type": "beside",
+   "i": 8,
+   "obj": "Taula"
+  },
+  {
+   "type": "beside",
+   "i": 1,
+   "obj": "Cadira"
+  },
+  {
+   "type": "beside",
+   "i": 0,
+   "obj": "Estoreta"
+  },
+  {
+   "type": "beside",
+   "i": 3,
+   "obj": "Prestatge"
+  },
+  {
+   "type": "room",
+   "i": 4,
+   "cen": "ali"
+  },
+  {
+   "type": "notCorner",
+   "i": 7
+  },
+  {
+   "type": "onNone",
+   "i": 2,
+   "obj": "Catifa"
+  },
+  {
+   "type": "onNone",
+   "i": 9,
+   "obj": "Estoreta"
+  },
+  {
+   "type": "room",
+   "i": 0,
+   "cen": "fep"
+  },
+  {
+   "type": "inCorner",
+   "i": 4
+  }
+ ],
+ "reveal": "L'última plaça lliure era R3 C2, a l'Institut Salvador Seguí, sobre una estoreta. Joan hi podia seure, i Laura M no, perquè no era mai sobre cap estoreta. Per això Laura M es queda sense plaça."
+}

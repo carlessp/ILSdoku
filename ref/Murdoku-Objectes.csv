@@ -1,0 +1,150 @@
+id,nom,occupiable,svg
+0,Window,null,obj_window.svg
+1,Plant,false,obj_plant.svg
+2,Chair,true,obj_chair.svg
+3,TV,false,obj_tv.svg
+4,Table,false,obj_table.svg
+5,Carpet,true,obj_carpet.svg
+6,Bed,true,obj_bed.svg
+7,Bed,true,obj_bed_top.svg
+8,Void,null,obj_void.svg
+9,Crate,false,obj_crate.svg
+10,Tree,false,obj_tree.svg
+11,Tree,false,obj_palmtree.svg
+12,Fire,false,obj_fire.svg
+13,Shelf,false,obj_shelf.svg
+14,Trashcan,false,obj_trashcan.svg
+15,Horse,true,obj_horse.svg
+16,Cactus,false,obj_cactus.svg
+17,Cow,false,obj_cow.svg
+18,Door,null,obj_door.svg
+19,Painting,true,obj_painting.svg
+20,Statue,false,obj_statue.svg
+21,Car,true,obj_car.svg
+22,Car,true,obj_car_reverse.svg
+23,Rubble,false,obj_rubble.svg
+24,Sand,true,obj_sand.svg
+25,Rowboat,true,obj_rowboat.svg
+26,Shark,false,obj_shark.svg
+27,House,true,obj_house.svg
+28,Register,false,obj_register.svg
+29,Present,false,obj_present.svg
+30,Present,false,obj_present_02.svg
+31,Present,false,obj_present_03.svg
+32,Barrel,false,obj_barrel.svg
+33,Void show Back,null,obj_void_show_back.svg
+34,Puddle,true,obj_puddle.svg
+35,Boar,false,obj_boar.svg
+36,Weapons,false,obj_weapons.svg
+37,Shrub,false,obj_shrub.svg
+38,Jar,false,obj_jar.svg
+39,Catapult,false,obj_catapult.svg
+40,Camel,true,obj_camel.svg
+41,Pumpkin,false,obj_pumpkin.svg
+42,Box,false,obj_box.svg
+43,Boulder,false,obj_boulder.svg
+44,Bonsai,false,obj_bonsai.svg
+45,Locker,false,obj_locker.svg
+46,Punching Bag,false,obj_punching_bag.svg
+47,Lion,false,obj_lion.svg
+48,Pig,false,obj_pig.svg
+49,Gas Pump,false,obj_gas_pump.svg
+50,Cat,true,obj_cat.svg
+51,Grain,false,obj_grain.svg
+52,Crocodile,false,obj_crocodile.svg
+53,Bear,false,obj_bear.svg
+54,Elephant,false,obj_elephant.svg
+55,Penguin,false,obj_penguin.svg
+56,Bus,true,obj_bus.svg
+57,Cone,false,obj_cone.svg
+58,Flag,true,obj_hole.svg
+59,Mammoth,true,obj_mammoth.svg
+60,Basket,false,obj_basket.svg
+61,Bow,true,obj_bow.svg
+62,Fish,true,obj_fish.svg
+63,Berries,true,obj_berries.svg
+64,Wolf,true,obj_wolf.svg
+65,Tool,true,obj_tool.svg
+66,Stump,false,obj_stump.svg
+67,Bones,false,obj_bones.svg
+68,Sabertooth,false,obj_sabertooth.svg
+69,Tree,false,obj_tree_hollow.svg
+70,Shell,false,obj_shell.svg
+71,Golf Cart,true,obj_golf_cart.svg
+72,Water,false,obj_water.svg
+73,Sloop,true,obj_sloop.svg
+74,Frigate,true,obj_frigate.svg
+75,Boulder,false,obj_rock.svg
+76,Boat,true,obj_boat.svg
+77,Sloop,true,obj_sloop_template.svg
+78,Tee,true,obj_tee.svg
+79,Lily Pad,false,obj_lily_pad.svg
+80,Flowers,false,obj_flowers.svg
+81,Easel,false,obj_easel.svg
+82,Camera,false,obj_camera.svg
+83,Safe,false,obj_safe.svg
+84,Buffalo,false,obj_buffalo.svg
+85,Tombstone,false,obj_tombstone.svg
+86,Piano,false,obj_piano.svg
+87,Hay,false,obj_hay.svg
+88,Coal,false,obj_coal.svg
+89,Sack,false,obj_sack.svg
+90,Carriage,true,obj_carriage.svg
+91,Ox,true,obj_ox.svg
+92,Safe,false,obj_safe.svg
+93,Dynamite,false,obj_dynamite.svg
+94,Register,false,obj_register.svg
+141,Old Register,false,obj_old_register.svg
+95,Treasure,false,obj_treasure.svg
+96,Monkey,true,obj_monkey.svg
+97,Gold Vein,false,obj_gold_vein.svg
+98,Mining Cart,false,obj_mining_cart.svg
+99,Tree,false,obj_palm_tree.svg
+100,Tree,false,obj_palm_tree_02.svg
+101,Obelisk,false,obj_obelisk.svg
+102,Column,false,obj_column.svg
+103,Block,false,obj_block.svg
+104,Lilypad,false,obj_lilypad.svg
+105,Statue,false,obj_canopic_jars.svg
+106,Sarcophagus,false,obj_sarcophagus.svg
+107,Sarcophagus,false,obj_sarcophagus_top.svg
+108,Anubis Symbol,true,obj_anubis_symbol.svg
+109,Ra Symbol,true,obj_ra_symbol.svg
+110,Brig,true,obj_brig.svg
+111,Galleon,true,obj_galleon.svg
+112,Frigate,true,obj_frigate_vertical.svg
+113,Sloop,true,obj_galleon_vertical.svg
+114,Statue,false,obj_canopic_jar_ra.svg
+115,Weapons Rack,false,obj_weapons_rack.svg
+116,Sphinx,false,obj_sphinx.svg
+117,Chest,false,obj_chest_egypt.svg
+118,Chest,false,obj_chest_pirate.svg
+119,Bed,true,obj_bed_egypt.svg
+120,Bed,true,obj_bed_egypt_top.svg
+121,Papyrus,false,obj_papyrus.svg
+122,Chair,true,obj_chair_egypt.svg
+123,Rope,false,obj_rope.svg
+124,Raft,true,obj_raft.svg
+125,Cannon,false,obj_cannon.svg
+126,Cannon,false,obj_cannon_02.svg
+127,Cannon,false,obj_cannon_down.svg
+128,Cannon,false,obj_cannon_04.svg
+129,Hammock,true,obj_hammock.svg
+130,Hammock,true,obj_hammock_02.svg
+131,Column,false,obj_column_short.svg
+132,Chest,false,obj_chest_gold.svg
+133,Barrel,false,obj_barrel_water.svg
+134,Time Machine,false,obj_time_machine.svg
+135,Teddy Bear,false,obj_teddy_bear.svg
+136,Something,false,obj_time_machine.svg
+137,Horse,true,obj_horse_reverse.svg
+138,Oil Slick,true,obj_puddle.svg
+139,Paint Spill,true,obj_puddle.svg
+140,Path,true,
+145,Drum Set,false,obj_drumset.svg
+146,Pyro Fire,false,obj_pyrofire.svg
+147,Portable Toilet,true,obj_portable_toilet.svg
+148,Speaker,false,obj_speaker.svg
+149,Sign,false,obj_sign.svg
+150,Lamppost,false,obj_lamppost.svg
+151,Black Cat,true,obj_blackcat.svg

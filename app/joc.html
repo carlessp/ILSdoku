@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ILSdoku — joc de lògica per a intèrprets de llengua de signes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html" title="Ves a la portada">
+    <span class="logo">IL</span>
+    <span>ILSdoku</span>
+    <small>quadra l'horari de les ILS</small>
+  </a>
+  <div class="spacer"></div>
+  <div class="case-picker">
+    <label for="case-picker">Cas:</label>
+    <select id="case-picker"></select>
+    <span class="badge-diff" id="case-diff">—</span>
+  </div>
+  <button class="tool ghost" id="btn-glossary">📖 Glossari</button>
+  <a class="tool ghost" id="btn-print-link" href="plantilla.html" style="text-decoration:none">🖨️ Plantilles</a>
+  <button class="tool ghost" id="btn-help">❓ Com s'hi juga</button>
+</header>
+
+<main class="layout">
+
+  <!-- Columna esquerra: tauler -->
+  <section class="panel">
+    <div class="panel-title" id="case-title">—</div>
+    <div style="padding:0 16px 6px; color:var(--ink-soft); font-size:.85rem;" id="case-meta">—</div>
+
+    <div class="board-wrap">
+      <div class="board" id="board"></div>
+    </div>
+
+    <div class="toolbar">
+      <button class="tool" id="btn-x" title="Marca les caselles impossibles"><span class="xglyph">✕</span> Descartar</button>
+      <button class="tool" id="btn-erase" title="Esborra una casella">🧽 Esborrar</button>
+      <button class="tool" id="btn-undo" title="Desfer (Ctrl+Z)">↩︎ Desfer</button>
+      <div class="spacer" style="flex:1"></div>
+      <button class="tool" id="btn-hint">💡 Pista</button>
+      <button class="tool" id="btn-reset">↺ Reiniciar</button>
+      <button class="tool primary" id="btn-submit">ENVIA</button>
+    </div>
+
+    <div class="message info" id="message"></div>
+
+    <div class="legend">
+      <span class="sw"><span class="box" style="background:#eaf3fc"></span> Zona Matí</span>
+      <span class="sw"><span class="box" style="background:#fdf2e4"></span> Zona Tarda</span>
+      <span class="sw"><span class="box" style="background:repeating-linear-gradient(45deg,#e8e2d8 0 5px,#f4f0ea 5px 10px)"></span> Objecte (no ocupable)</span>
+      <span class="sw"><img class="sw-img" src="img/cadira.png" alt=""> Objecte ocupable</span>
+    </div>
+  </section>
+
+  <!-- Columna dreta: ILS candidates -->
+  <section class="panel cards-panel">
+    <div class="panel-title">ILS candidates</div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+</main>
+
+<!-- Modal: com s'hi juga -->
+<div class="modal-backdrop hidden" id="modal-help">
+  <div class="modal">
+    <h2>Com s'hi juga a ILSdoku</h2>
+    <div class="modal-body">
+      <p>Ets qui confecciona l'horari dels <strong>intèrprets de llengua de signes (ILS)</strong>
+      als centres educatius. Has de col·locar cada ILS al seu lloc respectant totes les pistes.</p>
+      <p><strong>Regles del tauler</strong></p>
+      <ul>
+        <li><strong>Una ILS per fila</strong> i <strong>una per columna</strong>.</li>
+        <li>Cada <strong>centre</strong> (zona acolorida) ha de tenir <em>exactament</em> les ILS
+          que indica la seva placa (<em>cal 1</em>, <em>cal 2</em>, <em>cal 3</em>…).</li>
+        <li>Les ILS de <strong>matí</strong> només poden anar a la zona Matí (files de dalt);
+          les de <strong>tarda</strong>, a la zona Tarda. Les <strong>flexibles</strong>, a qualsevol.</li>
+        <li>No es pot col·locar ningú sobre un objecte <strong>no ocupable</strong>
+          (taula, pissarra, ordinador…). Sí sobre un de <strong>ocupable</strong> (cadira).</li>
+      </ul>
+      <p><strong>Objectiu final:</strong> hi ha <strong>una ILS de més</strong> (N places i N+1 candidates).
+      Quan quadris l'horari, descobriràs <strong>qui es queda sense plaça</strong>.</p>
+      <p><strong>Qui queda fora també té pista.</strong> Com que no ocupa cap casella, sempre és una
+      negació («no seia mai en cap cadira»): mira si pot ocupar l'<em>última plaça lliure</em>.
+      La forma de la targeta no et dirà mai qui és.</p>
+      <p><strong>Controls</strong></p>
+      <ul>
+        <li><strong>Tocar una casella</strong> = posar-hi una nota (lletra petita) de la ILS seleccionada.</li>
+        <li><strong>Mantenir premut</strong> una casella = col·locar-hi la ILS (lletra gran).</li>
+        <li><kbd>✕ Descartar</kbd> marca caselles impossibles; en col·locar una ILS,
+          la seva fila i columna es descarten totes soles. <kbd>🧽 Esborrar</kbd> neteja.</li>
+        <li><kbd>Ctrl</kbd>+<kbd>Z</kbd> desfà. <kbd>💡 Pista</kbd> et guia pas a pas: cada
+          cop que el prems et proposa la següent ILS a resoldre — primer el raonament,
+          després la casella — fins a resoldre també la incògnita.</li>
+      </ul>
+      <p><strong>En paper:</strong> el botó <kbd>🖨️ Plantilles</kbd> obre un full A4 per
+      imprimir (enunciat, glossari i solució).</p>
+    </div>
+    <div class="modal-actions">
+      <button class="tool primary" id="help-close">Entesos</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: glossari -->
+<div class="modal-backdrop hidden" id="modal-glossary">
+  <div class="modal">
+    <h2>Glossari</h2>
+    <div class="modal-body">
+      <p>Vocabulari d'objectes i símbols que et trobaràs al tauler.</p>
+
+      <h3 class="gloss-h">Objectes ocupables <small>— una ILS s'hi pot seure</small></h3>
+      <div class="gloss-grid" id="gloss-ocupables"></div>
+
+      <h3 class="gloss-h">Objectes no ocupables <small>— bloquegen la casella</small></h3>
+      <div class="gloss-grid" id="gloss-obstacles"></div>
+
+      <h3 class="gloss-h">Símbols i conceptes</h3>
+      <ul class="gloss-terms">
+        <li><strong>ILS</strong> — intèrpret de llengua de signes; són les fitxes que has de col·locar.</li>
+        <li><strong>Centre</strong> — zona acolorida del tauler (FEP Aprenents, Institut dels Aliments…).</li>
+        <li><strong>Demanda</strong> — nombre exacte d'ILS que ha de treballar en un centre (<em>cal 1</em>, <em>cal 2</em>, <em>cal 3</em>).</li>
+        <li><strong>Zona Matí / Tarda</strong> — franja de files del tauler; cada ILS només pot anar a la seva.</li>
+        <li><strong>Nota</strong> — lletra petita que escrius en una casella com a candidata.</li>
+        <li><strong>Fitxa col·locada</strong> — la lletra gran; la ILS hi treballa.</li>
+        <li><strong>✕ Descartar</strong> — marca una casella com a impossible. En col·locar una ILS, la seva <strong>fila i columna</strong> es descarten <em>soles</em> (i també les caselles d'un centre que ja té la seva demanda completa).</li>
+        <li><strong>💡 Pista</strong> — et guia pas a pas cap a la solució: proposa la propera ILS a resoldre (i, si cal, la seva casella) i acaba revelant qui es queda sense plaça.</li>
+      </ul>
+    </div>
+    <div class="modal-actions">
+      <button class="tool primary" id="glossary-close">Entesos</button>
+    </div>
+  </div>
+</div>
+
+<div class="tip" id="tip" role="tooltip" aria-hidden="true"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

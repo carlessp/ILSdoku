@@ -1,0 +1,236 @@
+{
+ "id": "el-forat-de-lhorari",
+ "title": "El forat de l'horari",
+ "difficulty": "fàcil",
+ "n": 7,
+ "mati_rows": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "mode": null,
+ "allowed_types": null,
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 3
+  },
+  {
+   "id": "ali",
+   "name": "Institut dels Aliments",
+   "short": "Inst. dels Aliments",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    4,
+    5,
+    6
+   ],
+   "demand": 1
+  },
+  {
+   "id": "esc",
+   "name": "INS Escola del Treball",
+   "short": "Escola del Treball",
+   "rows": [
+    4,
+    5,
+    6
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "demand": 2
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    4,
+    5,
+    6
+   ],
+   "cols": [
+    5,
+    6
+   ],
+   "demand": 1
+  }
+ ],
+ "ils": [
+  {
+   "name": "Oscar",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "O"
+  },
+  {
+   "name": "José Javier",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "JJ"
+  },
+  {
+   "name": "Carla",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "C"
+  },
+  {
+   "name": "Judit",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "J"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Miriam",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "M"
+  },
+  {
+   "name": "Irene",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "I"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,0": "Cadira",
+  "0,1": "Catifa",
+  "0,2": "Ordinador",
+  "0,5": "Taula",
+  "0,6": "Cadira",
+  "1,0": "Pissarra",
+  "1,3": "Estoreta",
+  "1,4": "Prestatge",
+  "2,0": "Banc",
+  "2,3": "Lavabo",
+  "2,6": "Prestatge",
+  "3,1": "Cadira",
+  "3,3": "Ordinador",
+  "3,5": "Cadira",
+  "3,6": "Màquina de cafè",
+  "4,0": "Pissarra",
+  "4,3": "Lavabo",
+  "4,5": "Taula",
+  "5,1": "Cadira",
+  "5,4": "Catifa",
+  "5,5": "Prestatge",
+  "5,6": "Rellotge",
+  "6,0": "Cadira",
+  "6,2": "Taula",
+  "6,4": "Pissarra",
+  "6,6": "Catifa"
+ },
+ "target": {
+  "Oscar": [
+   0,
+   1
+  ],
+  "José Javier": [
+   1,
+   3
+  ],
+  "Carla": [
+   2,
+   0
+  ],
+  "Judit": [
+   3,
+   5
+  ],
+  "Aroha": [
+   4,
+   2
+  ],
+  "Miriam": [
+   5,
+   4
+  ],
+  "Irene": [
+   6,
+   6
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "on",
+   "i": 0,
+   "obj": "Catifa"
+  },
+  {
+   "type": "on",
+   "i": 1,
+   "obj": "Estoreta"
+  },
+  {
+   "type": "beside",
+   "i": 5,
+   "obj": "Pissarra"
+  },
+  {
+   "type": "on",
+   "i": 2,
+   "obj": "Banc"
+  },
+  {
+   "type": "room",
+   "i": 4,
+   "cen": "esc"
+  },
+  {
+   "type": "alone",
+   "i": 6
+  },
+  {
+   "type": "onNone",
+   "i": 3,
+   "obj": "Catifa"
+  },
+  {
+   "type": "onNone",
+   "i": 7,
+   "obj": "Cadira"
+  }
+ ],
+ "reveal": "L'última plaça lliure era R4 C6, a l'Institut dels Aliments, sobre una cadira. Judit hi podia seure, i Laura M no, perquè no seia mai en cap cadira. Per això Laura M es queda sense plaça."
+}

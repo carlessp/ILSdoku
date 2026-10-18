@@ -1,0 +1,631 @@
+puzzle_id,titol_en,dificultat,grid_w,grid_h,idx,personatge,sexe,solucio_x_col,solucio_y_row,es_assassi,es_victima,clau_en
+promo-brazil-house-party,House Party,very easy,5,5,0,Ana,1,3,4,True,False,She was beside the plant.
+promo-brazil-house-party,House Party,very easy,5,5,1,Bianca,1,0,3,False,False,She was sitting in a chair.
+promo-brazil-house-party,House Party,very easy,5,5,2,Carlos,0,2,0,False,False,He was beside a table.
+promo-brazil-house-party,House Party,very easy,5,5,3,Diego,0,1,1,False,False,He was beside the shelf.
+promo-brazil-house-party,House Party,very easy,5,5,4,Vaughn,0,4,2,False,True,The Victim. He was alone with the murderer.
+promo-comiccon-2026-in,The Villain's Lair,easy,6,6,0,Arjun,0,5,2,False,False,He was north of Esha.
+promo-comiccon-2026-in,The Villain's Lair,easy,6,6,1,Brigitte,1,4,5,True,False,She was on the Secret Stairs.
+promo-comiccon-2026-in,The Villain's Lair,easy,6,6,2,Chetan,0,2,0,False,False,He was on the chair.
+promo-comiccon-2026-in,The Villain's Lair,easy,6,6,3,Dr. Desai,1,1,1,False,False,She was beside the statue.
+promo-comiccon-2026-in,The Villain's Lair,easy,6,6,4,Esha,1,3,3,False,False,She was on a bed.
+promo-comiccon-2026-in,The Villain's Lair,easy,6,6,5,Vikram,0,0,4,False,True,The Victim. He was alone with the murderer.
+promo-comiccon-2026,The Secret Lab,easy,6,6,0,Andrew,0,5,2,False,False,He was north of Edith.
+promo-comiccon-2026,The Secret Lab,easy,6,6,1,Brigitte,1,4,5,False,False,She was on the Secret Stairs.
+promo-comiccon-2026,The Secret Lab,easy,6,6,2,Conrad,0,2,0,False,False,He was on the chair.
+promo-comiccon-2026,The Secret Lab,easy,6,6,3,Dr. Davies,1,1,1,False,False,She was beside the statue.
+promo-comiccon-2026,The Secret Lab,easy,6,6,4,Edith,1,3,3,True,False,She was on a bed.
+promo-comiccon-2026,The Secret Lab,easy,6,6,5,Victor,0,0,4,False,True,The Victim. He was alone with the murderer.
+puzzle-24h-delivery-easy,24-Hour Delivery,very easy,6,6,0,Alexander,0.000000,,,False,False,He was beside the box.
+puzzle-24h-delivery-easy,24-Hour Delivery,very easy,6,6,1,Bella,1.000000,,,False,False,She was sitting in a chair.
+puzzle-24h-delivery-easy,24-Hour Delivery,very easy,6,6,2,Carol,1.000000,,,True,False,She was the only person
+puzzle-24h-delivery-easy,24-Hour Delivery,very easy,6,6,3,Dalia,1.000000,,,False,False,She was in the Bedroom.
+puzzle-24h-delivery-easy,24-Hour Delivery,very easy,6,6,4,Evangeline,1.000000,,,False,False,She was either beside a shrub
+puzzle-24h-delivery-easy,24-Hour Delivery,very easy,6,6,5,Viraj,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,0,Abigail,1,1,2,False,False,She was alone.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,1,Ben,0,5,3,False,False,"He was southeast of Abigail
+and northwest of Hawa"
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,2,Carl,0,3,0,False,False,He was on a mud puddle.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,3,David,0,6,1,False,False,He was alone with Carl.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,4,Edgar,0,8,8,False,False,He was beside a tree.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,5,France,1,2,7,False,False,She was on a mud puddle.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,6,Grace,1,0,6,True,False,"She was sitting in a chair.
+She was exactly one row north of France."
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,7,Hawa,1,7,5,False,False,She was not beside a table.
+puzzle-a-messy-situation-hard,A Messy Situation,hard,9,9,8,Valentino,0,4,4,False,True,The Victim. He was alone with the murderer.
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,0,Aubrey,1.000000,,,False,False,She was beside an
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,1,Briar,1.000000,,,False,False,She was in the bottom row.
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,2,Christopher,0.000000,,,False,False,He was sitting on
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,3,Danielle,1.000000,,,True,False,She was beside some
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,4,Edgar,0.000000,,,False,False,He was in the Restroom.
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,5,Francesca,1.000000,,,False,False,She was on a path.
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,6,Gordon,0.000000,,,False,False,He was in the
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,7,Hermine,1.000000,,,False,False,She was on a boat.
+puzzle-a-walk-in-the-park-easy,A Walk in the Park,easy,9,9,8,Vikram,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,0,Aaron,0.000000,,,False,False,He was with Elyse in
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,1,Bruce,0.000000,,,False,False,He was in the Shed.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,2,Carissa,1.000000,,,True,False,She was beside a tree.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,3,Denise,1.000000,,,False,False,She was in the Bedroom
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,4,Elyse,1.000000,,,False,False,She was sitting on a chair.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,5,Franklin,0.000000,,,False,False,He was on a carpet.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,6,Gilbert,0.000000,,,False,False,He was in the Garden.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,7,Holden,0.000000,,,False,False,He was alone.
+puzzle-backyard-garden-easy,The Backyard Garden,easy,9,9,8,Violet,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-blackout,Blackout,hard,9,9,0,Abdallah,0,8,3,False,False,He was alone.
+puzzle-blackout,Blackout,hard,9,9,1,Bastian,0,5,2,False,False,He was beside a table. He was not alone.
+puzzle-blackout,Blackout,hard,9,9,2,Conrad,0,7,6,False,False,He was in the Main Bedroom.
+puzzle-blackout,Blackout,hard,9,9,3,Dorothy,1,0,8,True,False,She was in a corner of the Guest room.
+puzzle-blackout,Blackout,hard,9,9,4,Esther,1,6,0,False,False,She was beside a chair. She was not sitting in a chair.
+puzzle-blackout,Blackout,hard,9,9,5,France,1,4,5,False,False,She was in the Kitchen.
+puzzle-blackout,Blackout,hard,9,9,6,Greg,0,1,4,False,False,"He was on a carpet. He was alone
+with a woman."
+puzzle-blackout,Blackout,hard,9,9,7,Helen,1,3,1,False,False,"There was a TV somewhere in
+her row."
+puzzle-blackout,Blackout,hard,9,9,8,Victor,0,2,7,False,True,The Victim. He was alone with the murderer.
+puzzle-book-club-very-easy,The Book Club,very easy,6,6,0,Ada,1,3,0,False,False,She was beside a plant.
+puzzle-book-club-very-easy,The Book Club,very easy,6,6,1,Brigitte,1,1,5,False,False,She was south of Cameron.
+puzzle-book-club-very-easy,The Book Club,very easy,6,6,2,Cameron,1,4,4,True,False,She was on a carpet.
+puzzle-book-club-very-easy,The Book Club,very easy,6,6,3,Darlene,1,0,3,False,False,She was the only person sitting in a chair.
+puzzle-book-club-very-easy,The Book Club,very easy,6,6,4,Edison,0,2,1,False,False,He was in the Library. He was not beside a shelf.
+puzzle-book-club-very-easy,The Book Club,very easy,6,6,5,Vinita,1,5,2,False,True,The Victim. She was alone with the murderer.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,0,Ali,1,1,9,False,False,He was in the Food Court. He was not on a carpet.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,1,Dan,0,8,6,False,False,He was in Kiosk F.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,2,Elena,1,0,2,False,False,She was in Kiosk A.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,3,Freida,1,9,0,True,False,She was beside a table.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,4,Harlan,0,10,8,False,False,He was sitting in a chair.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,5,Julia,1,3,1,False,False,She was in the Washroom.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,6,Ken,0,2,10,False,False,He was in the same area as Ali.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,7,Nicholas,0,11,4,False,False,He was in Kiosk D.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,8,Rebecca,1,7,11,False,False,She was in the Entrance. She was not on a carpet.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,9,Lucinda,1,4,3,False,False,She was in Kiosk B.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,10,William,0,5,7,False,False,He was beside a shelf.
+puzzle-brazil-biennale-easy,The São Paulo Biennale,easy,12,12,11,Virginia,1,6,5,False,True,The Victim. She was alone with the murderer.
+puzzle-car-repair-easy,Car Repair,very easy,6,6,0,Anthony,0,4,5,False,False,He was in a car.
+puzzle-car-repair-easy,Car Repair,very easy,6,6,1,Brock,0,3,4,False,False,He was on an oil slick.
+puzzle-car-repair-easy,Car Repair,very easy,6,6,2,Crystal,1,1,0,True,False,She was sitting in a chair.
+puzzle-car-repair-easy,Car Repair,very easy,6,6,3,Diane,1,5,2,False,False,"She was alone in
+the Waiting Area."
+puzzle-car-repair-easy,Car Repair,very easy,6,6,4,Emilio,0,2,3,False,False,He was beside a shelf.
+puzzle-car-repair-easy,Car Repair,very easy,6,6,5,Vaughn,0,0,1,False,True,The Victim. He was alone with the murderer.
+puzzle-date-night-hard,Date Night,hard,9,9,0,Addison,1,5,3,False,False,There was no man in her area.
+puzzle-date-night-hard,Date Night,hard,9,9,1,Bella,1,2,4,False,False,Her square was not beside a River square.
+puzzle-date-night-hard,Date Night,hard,9,9,2,Candice,1,4,8,False,False,"She was one column west of Addison, in another area."
+puzzle-date-night-hard,Date Night,hard,9,9,3,Damien,0,7,2,False,False,He was with the only person on a path square.
+puzzle-date-night-hard,Date Night,hard,9,9,4,Erin,1,6,6,False,False,She was beside a River square. She was not on the Lovers' Bridge.
+puzzle-date-night-hard,Date Night,hard,9,9,5,Fred,0,8,5,False,False,He was beside a tree.
+puzzle-date-night-hard,Date Night,hard,9,9,6,George,0,3,7,False,False,He was beside the statue.
+puzzle-date-night-hard,Date Night,hard,9,9,7,Hugh,0,1,1,True,False,He was alone with the only person sitting in a chair.
+puzzle-date-night-hard,Date Night,hard,9,9,8,Vinson,0,0,0,False,True,The Victim. He was alone with the murderer.
+puzzle-discord-island-medium,Discord Island,medium,9,9,0,ANICEBREAKER,1,7,6,False,False,"Beside a TV.
+North of Mihomir."
+puzzle-discord-island-medium,Discord Island,medium,9,9,1,Caprazo,0,5,0,False,False,Beside an easel.
+puzzle-discord-island-medium,Discord Island,medium,9,9,2,jacob,0,8,3,True,False,In the first or in the last column.
+puzzle-discord-island-medium,Discord Island,medium,9,9,3,mihomir,0,0,7,False,False,The only person sitting in a chair.
+puzzle-discord-island-medium,Discord Island,medium,9,9,4,nyabara,1,2,8,False,False,In a three people area.
+puzzle-discord-island-medium,Discord Island,medium,9,9,5,padawanlivx,1,6,5,False,False,Not on a path square.
+puzzle-discord-island-medium,Discord Island,medium,9,9,6,Revelations,0,4,2,False,False,The only person on a carpet.
+puzzle-discord-island-medium,Discord Island,medium,9,9,7,x3du4rd0_5i1v4x,0,3,4,False,False,Beside a shelf.
+puzzle-discord-island-medium,Discord Island,medium,9,9,8,Garand,0,1,1,False,True,The Victim. He was alone with the murderer.
+puzzle-fireside-beach-very-easy,Fireside Beach,very easy,5,5,0,Angelo,0,1,3,False,False,He was south of Corinne.
+puzzle-fireside-beach-very-easy,Fireside Beach,very easy,5,5,1,Basil,0,0,0,True,False,He was in the Woods. He was not beside a tree.
+puzzle-fireside-beach-very-easy,Fireside Beach,very easy,5,5,2,Corinne,1,4,2,False,False,She was in the last column.
+puzzle-fireside-beach-very-easy,Fireside Beach,very easy,5,5,3,Daryl,1,3,4,False,False,She was beside the boulder.
+puzzle-fireside-beach-very-easy,Fireside Beach,very easy,5,5,4,Van,0,2,1,False,True,The Victim. He was alone with the murderer.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,0,Adalyn,1,1,3,False,False,She was in the Restroom.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,1,Bonnie,1,4,0,False,False,She was alone with someone who was on the bed.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,2,Craig,0,2,4,False,False,He was sitting in a chair.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,3,Donna,1,0,7,True,False,She was on a puddle.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,4,Enrique,0,8,1,False,False,He was not in a corner.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,5,Fleur,1,7,5,False,False,She was in the Kitchen.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,6,Gina,1,6,2,False,False,She was the only person on a carpet.
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,7,Hugo,0,5,6,False,False,"He was in the Living Room, beside a wall. The area on the other side was empty."
+puzzle-freezing-rain-medium,Freezing Rain,medium,9,9,8,Virgil,0,3,8,False,True,The Victim. He was alone with the murderer.
+puzzle-fresh-paint-easy,Fresh Paint,very easy,6,6,0,Augusto,0.000000,,,False,False,He was on a paint spill.
+puzzle-fresh-paint-easy,Fresh Paint,very easy,6,6,1,Bruce,0.000000,,,True,False,He was in the bottom row.
+puzzle-fresh-paint-easy,Fresh Paint,very easy,6,6,2,Casey,1.000000,,,False,False,She was beside the plant.
+puzzle-fresh-paint-easy,Fresh Paint,very easy,6,6,3,Daksha,1.000000,,,False,False,She was sitting in a chair.
+puzzle-fresh-paint-easy,Fresh Paint,very easy,6,6,4,Everett,0.000000,,,False,False,He was in the Kitchen.
+puzzle-fresh-paint-easy,Fresh Paint,very easy,6,6,5,Vicky,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,0,Abigail,1,3,8,False,False,She was beside a cash register.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,1,Bessie,1,2,5,False,False,She was in a corner of her area.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,2,Curtis,0,0,1,False,False,He was sitting in a chair.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,3,Duke,0,6,2,True,False,Not the outlaw. He was beside a chair.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,4,Etta,1,7,9,False,False,She was in the Bank.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,5,Frank,0,8,3,False,False,He was sitting on a horse.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,6,Garrett,0,1,4,False,False,He was beside a cactus.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,7,Hazel,1,9,6,False,False,She was sitting in a chair. She was with the outlaw.
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,8,Ivy,1,4,7,False,False,"She was south of Hazel, in a different area."
+puzzle-frontier-town-hard,Frontier Town,hard,10,10,9,Virgil,0,5,0,False,True,The Victim. Not the outlaw. He was alone with the murderer.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,0,Alicia,1,5,8,False,False,She was in Tent A or Tent C.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,1,Brenda,1,7,0,False,False,She was not on a carpet. She was in the top or in the bottom row.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,2,Clark,0,3,3,False,False,He was the only person beside a shrub.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,3,Dylan,0,1,6,True,False,He was on a bed.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,4,Ezequiel,0,4,1,False,False,He was the only person in a car.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,5,Florence,1,8,7,False,False,She was in the last column. She was south of Clark.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,6,George,0,6,4,False,False,He was sitting in a chair.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,7,Holden,0,2,2,False,False,He was in the Woods. Someone else was beside the bear.
+puzzle-grizzly-night-hard,Grizzly Night,hard,9,9,8,Victor,0,0,5,False,True,The Victim. He was alone with the murderer.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,0,Amelia,1,3,4,True,False,She was beside a plant.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,1,Brittney,1,4,3,False,False,She was not sitting in a chair.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,2,Claude,0,2,2,False,False,He was on a carpet.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,3,Douglas,0,7,1,False,False,He was not sitting in a chair.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,4,Enid,1,1,5,False,False,She was beside a shelf.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,5,Fiona,1,6,0,False,False,She was in the Restroom.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,6,Giovanni,0,0,7,False,False,He was at the Reception.
+puzzle-hells-kitchen-medium,Hell's Kitchen,medium,8,8,7,Vala,1,5,6,False,True,The Victim. She was alone with the murderer.
+puzzle-hoarders-easy,Hoarders,easy,8,8,0,Archer,0,3,0,False,False,He was in the Kitchen.
+puzzle-hoarders-easy,Hoarders,easy,8,8,1,Bradley,0,7,1,False,False,"He was sitting in a chair
+in the Dining Room."
+puzzle-hoarders-easy,Hoarders,easy,8,8,2,Chloe,1,0,2,False,False,She was on a bed.
+puzzle-hoarders-easy,Hoarders,easy,8,8,3,Denise,1,4,3,True,False,"She was in a corner
+of her room."
+puzzle-hoarders-easy,Hoarders,easy,8,8,4,Eloise,1,6,5,False,False,She was in the car.
+puzzle-hoarders-easy,Hoarders,easy,8,8,5,Falcon,0,1,7,False,False,He was beside a box.
+puzzle-hoarders-easy,Hoarders,easy,8,8,6,Gannon,0,5,6,False,False,He was alone with Eloise.
+puzzle-hoarders-easy,Hoarders,easy,8,8,7,Vicky,1,2,4,False,True,The Victim. She was alone with the murderer.
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,0,Avery,0.000000,,,False,False,He was north
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,1,Bashir,0.000000,,,False,False,"He was in the Walkway,"
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,2,Crystal,1.000000,,,False,False,She was beside a 
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,3,Dana,1.000000,,,False,False,She was beside a register.
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,4,Eva,1.000000,,,False,False,She was in the Coffee Shop.
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,5,Figgy,1.000000,,,True,False,She was the only
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,6,Gemma,1.000000,,,False,False,She was in the Bookstore.
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,7,Santa,0.000000,,,False,False,He was alone in
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,8,Idonea,1.000000,,,False,False,She was in the fifth column.
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,9,Jack,0.000000,,,False,False,He was exactly one row
+puzzle-holiday-shopping-medium,Holiday Shopping,medium,11,11,10,Vlimbo,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-horse-with-no-name-easy,A Horse With No Name,easy,6,6,0,Aldous,0,5,4,False,False,He was beside a cactus.
+puzzle-horse-with-no-name-easy,A Horse With No Name,easy,6,6,1,Blanche,1,2,1,False,False,She was not in the Desert. She was in the same diagonal as Aldous.
+puzzle-horse-with-no-name-easy,A Horse With No Name,easy,6,6,2,Cornelius,0,4,2,False,False,He was north of Aldous.
+puzzle-horse-with-no-name-easy,A Horse With No Name,easy,6,6,3,Dahlia,1,1,5,True,False,She was beside the table.
+puzzle-horse-with-no-name-easy,A Horse With No Name,easy,6,6,4,Emeric,0,3,0,False,False,He was beside a boulder.
+puzzle-horse-with-no-name-easy,A Horse With No Name,easy,6,6,5,Vin,0,0,3,False,True,The Victim. Not the outlaw. He was alone with the murderer.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,0,Al,0.000000,,,False,False,Jockey.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,1,Blake,0.000000,,,False,False,Jockey.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,2,Claire,1.000000,,,False,False,Jockey.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,3,Dale,0.000000,,,False,False,Jockey.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,4,Ella,1.000000,,,False,False,She was either in the
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,5,Frank,0.000000,,,False,False,He was in the Jockeys' Room.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,6,Glenda,1.000000,,,False,False,She was beside a TV.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,7,Hartley,0.000000,,,True,False,He was the only
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,8,Ignacia,1.000000,,,False,False,She was alone with Ella.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,9,James,0.000000,,,False,False,He was beside a shelf.
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,10,Kathryn,1.000000,,,False,False,She was in the
+puzzle-horsetrack-hard,The Horsetrack,hard,12,12,11,Veronica,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,0,Alan,0,2,4,False,False,He was on a boat.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,1,Blaine,0,1,2,False,False,He was on the Dock.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,2,Corina,1,6,7,True,False,She was beside a shrub.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,3,Dawn,1,0,3,False,False,She was southwest of Blaine.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,4,Elias,0,5,5,False,False,He was not beside a tree.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,5,Frederick,0,3,0,False,False,He was beside a boulder.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,6,Gerald,0,7,1,False,False,He was with a man.
+puzzle-lake-fishing-medium,Lake Fishing,medium,8,8,7,Vadim,0,4,6,False,True,The Victim. He was alone with the murderer.
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,0,Alice,1,8,7,False,False,"She was in the Cabin alone with
+another woman."
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,1,Bonnie,1,4,0,False,False,"She was exactly one row
+above Harper."
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,2,Camila,1,3,4,True,False,She was in the fifth row.
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,3,Daniel,0,0,8,False,False,"He was south of Alice
+and west of Finlay."
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,4,Eliza,1,6,6,False,False,She was the only person sitting on a chair.
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,5,Finlay,0,2,3,False,False,He was beside a tree. Someone north of him was beside the same tree.
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,6,Gilbert,0,1,2,False,False,He was not in a corner.
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,7,Harper,0,5,1,False,False,"He was in Forest (West) or Forest (East).
+He was not beside a tree."
+puzzle-lakeside-cabin-medium,Lakeside Cabin,medium,9,9,8,Vincenzo,0,7,5,False,True,The Victim. He was alone with the murderer.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,0,António,0,6,0,False,False,He was sitting in a chair that was beside a trashcan.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,1,Beatriz,1,1,5,False,False,She was beside a shelf.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,2,Cristiano,0,12,11,False,False,He was in the last column. He was not inside a Kiosk.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,3,Diana,1,0,1,False,False,She was in Kiosk 1.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,4,Eva,1,11,6,False,False,She was in the Zero a Oito Kiosk.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,5,Fábio,0,9,2,False,False,He was sitting in a chair.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,6,Gustavo,0,2,12,False,False,He was in the Food Truck.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,7,Heitor,0,7,10,False,False,He was in the Esplanada. He was not sitting in a chair.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,8,Irene,1,4,9,False,False,She was on a Walkway.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,9,Joana,1,10,7,False,False,She was exactly one row south of Eva.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,10,Kevin,0,5,4,True,False,He was north of Beatriz.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,11,Leonardo,0,3,3,False,False,He was beside a trashcan. He was not sitting in a chair.
+puzzle-lisboa-feiradolivro,The Lisbon Book Fair,hard,13,13,12,Valter,0,8,8,False,True,The Victim. He was alone with the murderer.
+puzzle-lisboa-quiosque,The Book Kiosk,easy,5,5,0,Adriana,1,3,1,False,False,She was in Kiosk 1.
+puzzle-lisboa-quiosque,The Book Kiosk,easy,5,5,1,Benedito,0,2,4,True,False,He was beside a table.
+puzzle-lisboa-quiosque,The Book Kiosk,easy,5,5,2,Catarina,1,0,2,False,False,She was not in the same area as Benedito.
+puzzle-lisboa-quiosque,The Book Kiosk,easy,5,5,3,David,0,1,0,False,False,He was beside the trashcan.
+puzzle-lisboa-quiosque,The Book Kiosk,easy,5,5,4,Eurico,0,4,3,False,True,The Victim. He was alone with the murderer.
+puzzle-main-street-expert,Main Street,expert,12,12,0,Andy,0,9,1,False,False,"He was alone with
+Iliana. He was north of her."
+puzzle-main-street-expert,Main Street,expert,12,12,1,Briggs,0,7,10,False,False,"He was sitting in
+a chair."
+puzzle-main-street-expert,Main Street,expert,12,12,2,Carissa,1,3,9,False,False,"Exactly three columns west of
+her, someone was in a car."
+puzzle-main-street-expert,Main Street,expert,12,12,3,Donna,1,4,2,False,False,"She was beside a wall, there was an empty area on the other side."
+puzzle-main-street-expert,Main Street,expert,12,12,4,Ezra,1,2,0,False,False,"She was in an Elevator. There
+was a woman in the other Elevator."
+puzzle-main-street-expert,Main Street,expert,12,12,5,Felicia,1,0,6,True,False,"She was in a
+car or in the bus."
+puzzle-main-street-expert,Main Street,expert,12,12,6,Greg,0,1,3,False,False,He was in the first or second column.
+puzzle-main-street-expert,Main Street,expert,12,12,7,Hayes,0,10,8,False,False,"He was beside a potted plant.
+He was with Briggs."
+puzzle-main-street-expert,Main Street,expert,12,12,8,Iliana,1,8,4,False,False,"She was on a Sidewalk.
+She was east of Donna."
+puzzle-main-street-expert,Main Street,expert,12,12,9,Jimmy,0,6,7,False,False,"He was alone
+on a Sidewalk."
+puzzle-main-street-expert,Main Street,expert,12,12,10,Kimberly,1,11,11,False,False,"Two rows north of her,
+someone was beside a statue."
+puzzle-main-street-expert,Main Street,expert,12,12,11,Virgil,0,5,5,False,True,The Victim. He was alone with the murderer.
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,0,Archer,0,0,5,True,False,He was the only person on a water puddle.
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,1,Barry,0,1,0,False,False,He was beside the shelf.
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,2,Clara,1,3,2,False,False,"She was alone.
+She was beside a lamppost."
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,3,Dale,0,5,3,False,False,"Exactly one column east of him, there was a man inside the car."
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,4,Emma,1,2,1,False,False,She was not beside a water puddle.
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,5,Flynn,0,6,4,False,False,He was in the last column.
+puzzle-midnight-rain-easy,Midnight Rain,easy,7,7,6,Vasilisa,1,4,6,False,True,The Victim. She was alone with the murderer.
+puzzle-minigolf-hard,Minigolf,hard,10,10,0,Albert,0,9,9,False,False,He was exactly one row south of someone on a flag.
+puzzle-minigolf-hard,Minigolf,hard,10,10,1,Burma,1,3,2,False,False,She was sitting in a chair.
+puzzle-minigolf-hard,Minigolf,hard,10,10,2,Craig,0,6,7,False,False,He was not in a corner.
+puzzle-minigolf-hard,Minigolf,hard,10,10,3,Duncan,0,5,6,False,False,He was the only person on a path tile.
+puzzle-minigolf-hard,Minigolf,hard,10,10,4,Elyana,1,7,5,True,False,She was on a sand tile.
+puzzle-minigolf-hard,Minigolf,hard,10,10,5,Faith,1,0,8,False,False,She was alone.
+puzzle-minigolf-hard,Minigolf,hard,10,10,6,Ginny,1,1,0,False,False,She was in the top row.
+puzzle-minigolf-hard,Minigolf,hard,10,10,7,Hugo,0,2,4,False,False,He was beside some flowers.
+puzzle-minigolf-hard,Minigolf,hard,10,10,8,Idril,1,4,1,False,False,She was alone on The Desert with someone.
+puzzle-minigolf-hard,Minigolf,hard,10,10,9,Valeria,1,8,3,False,True,The Victim. She was alone with the murderer.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,0,Ayla,1.000000,,,False,False,She is on Empty or Desert Island.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,1,Bastian,0.000000,,,False,False,The only man on Desert Island.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,2,Cassius,0.000000,,,False,False,Alone with someone in the Sea.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,3,Denise,1.000000,,,False,False,She is northeast of Ayla.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,4,Emma,1.000000,,,False,False,She is on a sand tile.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,5,Fred,0.000000,,,False,False,He is the southmost person
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,6,Graham,0.000000,,,False,False,"He is six rows south of Jared,"
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,7,Helena,1.000000,,,False,False,With Denise on an island. Both
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,8,Irene,1.000000,,,False,False,"She is north of Nikita,"
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,9,Jared,0.000000,,,False,False,He is beside a tree and
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,10,Keegan,0.000000,,,False,False,He was the only person
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,11,Lyra,1.000000,,,False,False,She is beside a tree in a four
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,12,Miguel,0.000000,,,True,False,There is at least one shark in his
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,13,Nikita,1.000000,,,False,False,"She is south of Irene, who is on the"
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,14,Olivia,1.000000,,,False,False,Only two people are south of her.
+puzzle-mystery-islands-expert,Mystery Islands,expert,16,16,15,Vincent,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,0,Arnold,0,1,0,False,False,He was alone in one of his own areas.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,1,Brie,1,4,2,False,False,She was in one of her own areas.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,2,Casey,0,6,6,False,False,He was on a bed.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,3,Dorothy,1,7,4,False,False,She was alone with a man.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,4,Eda,1,5,3,False,False,She was on a carpet.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,5,Fabian,0,3,1,False,False,He was beside a tree.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,6,Ginevra,1,2,5,True,False,She was beside a TV.
+puzzle-neighbour-dispute-medium,Neighbour Dispute,medium,8,8,7,Vivi,1,0,7,False,True,The Victim. She was alone with the murderer.
+puzzle-netflix-and-kill-easy,Netflix and Kill,very easy,6,6,0,Austin,0.000000,,,False,False,He was beside a shelf.
+puzzle-netflix-and-kill-easy,Netflix and Kill,very easy,6,6,1,Barbara,1.000000,,,True,False,She was on the bed.
+puzzle-netflix-and-kill-easy,Netflix and Kill,very easy,6,6,2,Charlotte,1.000000,,,False,False,She was the only person
+puzzle-netflix-and-kill-easy,Netflix and Kill,very easy,6,6,3,Dean,0.000000,,,False,False,He was in the Kitchen.
+puzzle-netflix-and-kill-easy,Netflix and Kill,very easy,6,6,4,Enid,1.000000,,,False,False,She was beside the TV.
+puzzle-netflix-and-kill-easy,Netflix and Kill,very easy,6,6,5,Vaughn,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-outdoor-painting-very-easy,Outdoor Painting,very easy,6,6,0,Allison,1,0,1,False,False,She was in the first column.
+puzzle-outdoor-painting-very-easy,Outdoor Painting,very easy,6,6,1,Brandon,0,5,4,False,False,"He was one row south of Donovan, in another area."
+puzzle-outdoor-painting-very-easy,Outdoor Painting,very easy,6,6,2,Clark,0,1,0,False,False,He was beside the boulder.
+puzzle-outdoor-painting-very-easy,Outdoor Painting,very easy,6,6,3,Donovan,0,4,3,True,False,He was beside the easel.
+puzzle-outdoor-painting-very-easy,Outdoor Painting,very easy,6,6,4,Ellie,1,3,5,False,False,She was sitting in a chair.
+puzzle-outdoor-painting-very-easy,Outdoor Painting,very easy,6,6,5,Vincenza,1,2,2,False,True,The Victim. She was alone with the murderer.
+puzzle-piano-lesson-easy,The Piano Lesson,easy,6,6,0,Annie,1,0,3,False,False,She was in the Closet.
+puzzle-piano-lesson-easy,The Piano Lesson,easy,6,6,1,Boris,0,1,4,False,False,He was beside the statue.
+puzzle-piano-lesson-easy,The Piano Lesson,easy,6,6,2,Clover,1,3,5,False,False,There was someone north of her in the same area.
+puzzle-piano-lesson-easy,The Piano Lesson,easy,6,6,3,Daryl,1,5,0,False,False,She was exactly one row north of someone beside the piano.
+puzzle-piano-lesson-easy,The Piano Lesson,easy,6,6,4,Eve,1,4,2,True,False,She was sitting in a chair.
+puzzle-piano-lesson-easy,The Piano Lesson,easy,6,6,5,Vada,1,2,1,False,True,The Victim. She was alone with the murderer.
+puzzle-preppers-medium,Preppers,medium,9,9,0,Angelo,0.000000,,,True,False,There was a box in 
+puzzle-preppers-medium,Preppers,medium,9,9,1,Blake,0.000000,,,False,False,He was in the Bedroom.
+puzzle-preppers-medium,Preppers,medium,9,9,2,Carolina,1.000000,,,False,False,There was a man on the bed 
+puzzle-preppers-medium,Preppers,medium,9,9,3,Darla,1.000000,,,False,False,Someone else was beside
+puzzle-preppers-medium,Preppers,medium,9,9,4,Emelia,1.000000,,,False,False,She was in the bottom row.
+puzzle-preppers-medium,Preppers,medium,9,9,5,Friedrich,0.000000,,,False,False,He was beside a TV.
+puzzle-preppers-medium,Preppers,medium,9,9,6,Grady,0.000000,,,False,False,He was sitting 
+puzzle-preppers-medium,Preppers,medium,9,9,7,Howie,0.000000,,,False,False,He was in the Bathroom.
+puzzle-preppers-medium,Preppers,medium,9,9,8,Vivianna,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,0,Arnold,0,3,4,False,False,There was a woman inside a car exactly one row south of him.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,1,Bruce,0,6,6,False,False,He was beside a tree.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,2,Connor,0,2,0,False,False,He was north of Ethan.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,3,Delilah,1,1,2,False,False,There was no man in her area.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,4,Ethan,0,8,1,False,False,There was at least one woman in his area.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,5,Fern,1,7,3,False,False,She was on a carpet.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,6,Graham,0,4,8,True,False,He was in the fifth column.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,7,Hedda,1,5,5,False,False,She was beside a shrub.
+puzzle-remote-village-hard,The Remote Village,hard,9,9,8,Vaughn,0,0,7,False,True,The Victim. He was alone with the murderer.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,0,Alvin,0,7,7,True,False,He was beside a crate.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,1,Basil,0,4,3,False,False,He was sitting in a chair.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,2,Clarence,0,6,4,False,False,He was beside a tree.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,3,Delphine,1,5,5,False,False,She was in a carriage.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,4,Estelle,1,0,9,False,False,She was exactly six rows south of the outlaw.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,5,Flora,1,2,6,False,False,She was on a horse.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,6,Gilbert,0,1,1,False,False,He was beside a boulder.
+puzzle-river-crossing-hard,River Crossing,hard,9,10,7,Horatio,0,3,2,False,False,"Not the outlaw.
+He was alone."
+puzzle-river-crossing-hard,River Crossing,hard,9,10,8,Valeria,1,8,8,False,True,The Victim. Not the outlaw. She was alone with the murderer.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,0,Antony,0.000000,,,False,False,He was on a boat.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,1,Brock,0.000000,,,False,False,There was a woman beside a crate
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,2,Claire,1.000000,,,False,False,She was on a boat.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,3,Delilah,1.000000,,,False,False,She was in the
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,4,Erin,1.000000,,,True,False,She was sitting in a chair.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,5,Floyd,0.000000,,,False,False,He was on Dock A or B.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,6,Giancarlo,0.000000,,,False,False,He was beside a crate.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,7,Hilton,0.000000,,,False,False,He was beside a shelf.
+puzzle-sleeping-with-the-fishes-hard,Sleeping with the Fishes,hard,11,9,8,Vincenza,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,0,Ace,0.000000,,,False,False,"Two rows north of him,"
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,1,Bastian,0.000000,,,False,False,"He was alone in a Cell,"
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,2,Colton,0.000000,,,False,False,"He was in a Cell, on a bed. There was an "
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,3,Dean,0.000000,,,False,False,"He was in a Cell, beside a table.  There"
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,4,Emilio,0.000000,,,True,False,He was beside
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,5,Frankie,0.000000,,,False,False,He was in the Showers.
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,6,Gideon,0.000000,,,False,False,He was the only person
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,7,Hector,0.000000,,,False,False,He was in the 
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,8,Isaak,0.000000,,,False,False,He was in front of a door.
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,9,Juan,0.000000,,,False,False,He was beside a 
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,10,Keegan,0.000000,,,False,False,He was in the Cafeteria alone
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,11,Liam,0.000000,,,False,False,He was beside a shelf.
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,12,Maeve,1.000000,,,False,False,She was the only Guard
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,13,Niko,0.000000,,,False,False,He was at the Reception.
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,14,Odelia,1.000000,,,False,False,She was beside a TV.
+puzzle-solitary-confinement-expert,Solitary Confinement,expert,16,16,15,Valentino,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,0,Amara,1.000000,,,False,False,She was in a house.
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,1,Barry,0.000000,,,True,False,He was on a boat.
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,2,Chad,0.000000,,,False,False,He was on Squirrel Island
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,3,Daryl,1.000000,,,False,False,She was beside the same object
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,4,Emelia,1.000000,,,False,False,She was beside a boar.
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,5,Finlay,0.000000,,,False,False,He was beside a shrub.
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,6,Gerald,0.000000,,,False,False,He was in the fifth column.
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,7,Hana,1.000000,,,False,False,She was on an island with 
+puzzle-summer-isles-easy,Summer Isles,easy,9,9,8,Vanessa,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,0,Angelo,0,5,2,False,False,He was beside the TV.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,1,Brigitte,1,7,1,False,False,She was on a bed.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,2,Catherine,1,8,8,False,False,She was in the last column.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,3,Dalton,0,1,5,False,False,He was beside a table.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,4,Elliot,0,6,6,True,False,He was the only person beside a plant.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,5,Fabrice,0,3,0,False,False,He was beside a shelf.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,6,Genevieve,1,0,3,False,False,She was beside a bed.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,7,Hayden,0,2,4,False,False,He was sitting in a chair.
+puzzle-surprise-visitors-medium,Surprise Visitors,medium,9,9,8,Virginia,1,4,7,False,True,The Victim. She was alone with the murderer.
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,0,Alysson,1,3,1,False,False,"She was exactly one column
+west of George."
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,1,Brenda,1,2,7,False,False,"She was sitting on a chair. She
+was alone with a man."
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,2,Cynthia,1,0,2,False,False,"She was in the first column.
+She was south of Alysson."
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,3,Dylan,0,5,6,False,False,He was beside a table.
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,4,Elsa,1,6,4,False,False,"There was a man sitting on a
+chair in her area."
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,5,Freya,1,1,8,False,False,She was beside a statue.
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,6,George,0,4,5,False,False,"He was either beside a statue
+or some rubble."
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,7,Hugh,0,7,0,True,False,"He was beside some rubble.
+He was not in the Lobby."
+puzzle-the-abandoned-museum-hard,The Abandoned Museum,hard,9,9,8,Vicky,1,8,3,False,True,The Victim. She was alone with the murderer.
+puzzle-the-art-school-medium,The Art School,medium,9,9,0,Anthony,0.000000,,,False,False,He was alone.
+puzzle-the-art-school-medium,The Art School,medium,9,9,1,Ben,0.000000,,,False,False,There was a framed painting
+puzzle-the-art-school-medium,The Art School,medium,9,9,2,Coralie,1.000000,,,False,False,She was beside a statue.
+puzzle-the-art-school-medium,The Art School,medium,9,9,3,Delilah,1.000000,,,True,False,There was a woman alone 
+puzzle-the-art-school-medium,The Art School,medium,9,9,4,Everly,1.000000,,,False,False,"She was beside an easel, directly"
+puzzle-the-art-school-medium,The Art School,medium,9,9,5,Fritz,0.000000,,,False,False,He was on a carpet.
+puzzle-the-art-school-medium,The Art School,medium,9,9,6,Ginevra,1.000000,,,False,False,She was the only person
+puzzle-the-art-school-medium,The Art School,medium,9,9,7,Hartley,0.000000,,,False,False,He was beside
+puzzle-the-art-school-medium,The Art School,medium,9,9,8,Valentine,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,0,Amelia,1.000000,,,False,False,She was one row north
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,1,Bella,1.000000,,,False,False,She was sitting in a chair 
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,2,Christopher,0.000000,,,False,False,He was beside a table.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,3,Dawn,1.000000,,,False,False,She was on a path.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,4,Elodie,1.000000,,,False,False,She was sitting in a chair.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,5,Francis,0.000000,,,False,False,He was alone.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,6,Garrett,0.000000,,,False,False,He was beside a bonsai.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,7,Heidi,1.000000,,,False,False,She was beside a shrub.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,8,Irma,1.000000,,,False,False,She was sitting in a chair.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,9,Joe,0.000000,,,True,False,He was beside a Lily pad.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,10,Kimberly,1.000000,,,False,False,She was beside a cactus.
+puzzle-the-botanical-garden-hard,The Botanical Garden,hard,12,12,11,Vanessa,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,0,Adonis,0,5,4,True,False,He was exactly one column east of someone inside a car.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,1,Briar,1,2,5,False,False,She was in the bus.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,2,Colby,0,1,1,False,False,He was in the Yard. He was not beside a tree.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,3,Don,0,3,0,False,False,He was with Colby.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,4,Elliot,0,0,3,False,False,He was sitting in the chair.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,5,Giovanna,1,4,6,False,False,She was not with Adonis.
+puzzle-the-bus-stop-easy,The Bus Stop,easy,7,7,6,Vala,1,6,2,False,True,The Victim. She was alone with the murderer.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,0,Aylin,1,11,13,False,False,She was beside a trash can. She was in the same area as the only woman office owner.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,1,Beatriz,1,10,4,False,False,She was in the Cubicles area. She was not with Flora or Kaleb.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,2,Carter,0,12,11,True,False,He was not sitting in a chair. He was with the CEO.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,3,Dillard,0,15,5,False,False,He was beside a plant.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,4,Esther,1,7,12,False,False,She was sitting in a chair in an Office. She was not in the CEO's Office.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,5,Flora,1,9,1,False,False,She was exactly one row south of an office owner.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,6,Grant,0,13,0,False,False,He was sitting in a chair in the top row.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,7,Hans,0,6,3,False,False,His column was not adjacent to Dillard's column.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,8,Irene,1,1,14,False,False,She was in the Hallway. Only one office owner was south of her.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,9,Jolly,1,8,9,False,False,There were exactly three office owners who were west of her.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,10,Kaleb,0,2,6,False,False,He was beside a shelf.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,11,Leroy,0,5,15,False,False,He was in the bottom row. He was not sitting in a chair.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,12,Monica,1,3,2,False,False,She was alone in the Conference room.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,13,Nina,1,0,8,False,False,She was not in the Cubicles area.
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,14,Omar,0,4,7,False,False,"He was in the Kitchen with Aylin or Jolly, who was sitting in a chair."
+puzzle-the-ceos-office-expert,The CEO's Office,expert,16,16,15,Vincent,0,14,10,False,True,The Victim. He was alone with the murderer.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,0,Arthur,0.000000,,,False,False,He was at the 
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,1,Benjamin,0.000000,,,False,False,He was alone with the only person
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,2,Camila,1.000000,,,False,False,She was in the Gallery.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,3,Daisy,1.000000,,,False,False,She was on a carpet.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,4,Eliza,1.000000,,,False,False,She was at the Witness Stand.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,5,Fritz,0.000000,,,True,False,He was beside a table.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,6,Graham,0.000000,,,False,False,He was in the Security area.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,7,Hector,0.000000,,,False,False,He was beside a plant.
+puzzle-the-courtroom-easy,The Courtroom,easy,9,9,8,Vanessa,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,0,Anthony,0.000000,,,False,False,He was in the first column.
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,1,Brent,0.000000,,,False,False,He was on the bed.
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,2,Crystal,1.000000,,,False,False,She was beside a plant.
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,3,Dakota,1.000000,,,True,False,She was on a carpet.
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,4,Eileen,1.000000,,,False,False,She was beside a shelf.
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,5,Frank,0.000000,,,False,False,Someone else in his room was
+puzzle-the-dead-plumber-easy,The Dead Plumber,easy,7,7,6,Vin,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,0,Allison,1,7,2,False,False,She was on a bed. She was alone.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,1,Bonnie,1,2,3,True,False,She was on a carpet.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,2,Claudio,0,8,4,False,False,He was beside a TV.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,3,Duncan,0,1,0,False,False,He was in the Kitchen.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,4,Evan,0,0,5,False,False,He was alone.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,5,Fabrice,0,6,8,False,False,He was beside a plant.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,6,Gracie,1,4,1,False,False,She was beside a shelf.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,7,Hudson,0,5,7,False,False,There was a man sitting in a chair exactly two rows north of him.
+puzzle-the-donut-house-hard,The Donut House,hard,9,9,8,Vallie,1,3,6,False,True,The Victim. She was alone with the murderer.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,0,Amir,0,6,5,True,False,He was beside the bonsai.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,1,Bianca,1,2,0,False,False,She was in the Preparation area.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,2,Carly,1,5,2,False,False,She was on a carpet.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,3,Diane,1,1,1,False,False,She was sitting in a chair.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,4,Emmett,0,0,4,False,False,He was in the first column.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,5,Felicia,1,3,3,False,False,She was on the Store Floor. There was a man in her area.
+puzzle-the-flower-store-easy,The Flower Store,easy,7,7,6,Vickie,1,4,6,False,True,The Victim. She was alone with the murderer.
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,0,Antoine,0,1,5,False,False,"He was the only man in the
+Dining Room."
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,1,Béatrice,1,2,7,False,False,She was on a carpet.
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,2,Charlotte,1,3,3,False,False,She was beside a table.
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,3,Denis,0,6,2,True,False,"He was beside a shelf.
+He was not in the Kitchen."
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,4,Etienne,0,8,8,False,False,He was in the Entrance.
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,5,Fabrice,0,0,1,False,False,"He was in the Kitchen,
+beside a table."
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,6,Gilbert,0,7,6,False,False,He was beside a plant.
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,7,Henriette,1,4,4,False,False,"She was the only person
+sitting in a chair."
+puzzle-the-french-restaurant-medium,The French Restaurant,medium,9,9,8,Vincent,0,5,0,False,True,"The Victim. He was alone with
+the murderer."
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,0,Axel,0,6,4,True,False,He was beside the drum set.
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,1,Briar,1,4,0,False,False,She was in the car or on the bed.
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,2,Carla,1,2,1,False,False,She was beside a shelf.
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,3,Dallas,0,1,2,False,False,He was not beside a box.
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,4,Ernesto,0,0,3,False,False,He was sitting in a chair.
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,5,Fawn,1,5,6,False,False,She was beside the tree.
+puzzle-the-garage-band-easy,The Garage Band,easy,7,7,6,Viper,0,3,5,False,True,The Victim. He was alone with the murderer.
+puzzle-the-golf-expert,The Golf Course,expert,16,16,0,Anna,1,12,15,False,False,"She was beside a
+water square."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,1,Breta,1,13,8,True,False,"She was beside a tree in Hole 4.
+She had a higher hole number than Harry,"
+puzzle-the-golf-expert,The Golf Course,expert,16,16,2,Carson,0,5,3,False,False,"He was not in the first
+or in the last column."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,3,Drew,0,9,10,False,False,He was beside a flag.
+puzzle-the-golf-expert,The Golf Course,expert,16,16,4,Edna,1,4,12,False,False,"She occupied the flag in an
+even-numbered hole."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,5,Flor,1,3,11,False,False,"She did not occupy the hole
+immediately before Naomi's hole."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,6,Gerald,0,1,4,False,False,"He was the only man to
+occupy a golf tee."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,7,Harry,0,0,14,False,False,"In his hole, there was a
+woman in a cart."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,8,Iris,1,2,9,False,False,"She was northwest of Flor and
+in the same hole."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,9,Jana,1,8,13,False,False,"She occupied the golf tee
+on either the Hole 6, 7 or 8."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,10,Kent,0,10,1,False,False,"He  was in the same
+hole as Mona."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,11,Lars,0,7,7,False,False,"His hole number is greater
+than Naomi's hole number."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,12,Mona,1,14,2,False,False,"She was on the flag for either Hole
+3, 4 or 5."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,13,Naomi,1,6,6,False,False,"She was within a
+sand pit."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,14,Oscar,0,11,0,False,False,"He was in the northmost
+row and beside a tree."
+puzzle-the-golf-expert,The Golf Course,expert,16,16,15,Vinny,0,15,5,False,True,The Victim. He was alone with the murderer.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,0,Ashton,0.000000,,,False,False,He was on a bed.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,1,Benjamin,0.000000,,,False,False,He was alone in the 
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,2,Calvin,0.000000,,,True,False,He was sitting  in a chair.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,3,Douglas,0.000000,,,False,False,He was the only person
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,4,Edmund,0.000000,,,False,False,He was beside a TV.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,5,Fernando,0.000000,,,False,False,He was in the Hallway.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,6,Gordon,0.000000,,,False,False,He was beside a wall.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,7,Hugh,0.000000,,,False,False,He was in the car.
+puzzle-the-great-escape-easy,The Great Escape,easy,9,9,8,Virgil,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,0,Aubrey,1.000000,,,False,False,She was on the Windy Trail.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,1,Briana,1.000000,,,False,False,She was exactly two
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,2,Clark,0.000000,,,False,False,He was on the Rocky Trail.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,3,Derek,0.000000,,,False,False,He was alone in
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,4,Elias,0.000000,,,False,False,He was in the
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,5,Finlay,0.000000,,,False,False,"There was a bear in his column,"
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,6,Gavin,0.000000,,,False,False,He was beside a boulder.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,7,Hedwig,1.000000,,,False,False,She was in the bottom row. Her 
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,8,Ingrid,1.000000,,,False,False,She was sitting in a chair.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,9,Joe,0.000000,,,True,False,He was beside a bear.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,10,Kobe,0.000000,,,False,False,He was in the Grove.
+puzzle-the-hiking-trip-hard,The Hiking Trip,hard,12,14,11,Vincenza,1.000000,,,False,True,The Victim. She was alone with the murderer.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,0,Antonio,0.000000,,,False,False,"He was beside a camera,"
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,1,Belah,1.000000,,,False,False,She was beside a TV.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,2,Cornelius,0.000000,,,False,False,He was in the sixth column.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,3,Damara,1.000000,,,False,False,She was beside
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,4,Evan,0.000000,,,False,False,He was on a set.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,5,Falcon,0.000000,,,False,False,He was beside a cactus.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,6,Gilbert,0.000000,,,False,False,A woman in his room
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,7,Hanako,1.000000,,,False,False,She was on the 
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,8,Isaiah,0.000000,,,False,False,He was on a
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,9,Johnny,0.000000,,,False,False,He was not in a corner
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,10,Kobe,0.000000,,,False,False,He was in a corner
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,11,Leroy,0.000000,,,False,False,He was beside
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,12,Mason,0.000000,,,False,False,He was beside a catapult.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,13,Natalia,1.000000,,,True,False,She was on a bed.
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,14,Olivia,1.000000,,,False,False,She was sitting
+puzzle-the-movie-studio-expert,The Movie Studio,expert,16,16,15,Vaughn,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-the-pigsty-very-easy,The Pigsty,very easy,5,5,0,Andy,0,4,2,False,False,He was in the Pigsty
+puzzle-the-pigsty-very-easy,The Pigsty,very easy,5,5,1,Brent,0,0,0,True,False,He was not on a mud puddle. 
+puzzle-the-pigsty-very-easy,The Pigsty,very easy,5,5,2,Carissa,1,3,4,False,False,She was beside the table.
+puzzle-the-pigsty-very-easy,The Pigsty,very easy,5,5,3,Dolores,1,1,3,False,False,She was in the Pasture. 
+puzzle-the-pigsty-very-easy,The Pigsty,very easy,5,5,4,Valerio,0,2,1,False,True,The Victim. He was alone with the murderer.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,0,August,0,2,6,False,False,He was on a carpet.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,1,Barnaby,0,9,3,False,False,He was alone in Condo A or Condo B.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,2,Clarence,0,1,4,False,False,He was beside a tree.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,3,Donna,1,0,8,False,False,She was sitting in a chair.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,4,Eirlys,1,3,1,True,False,She was on a bed.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,5,Florence,1,6,7,False,False,She was in a cart.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,6,Gus,0,8,0,False,False,He was in the top row.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,7,Horatio,0,5,5,False,False,"Exactly one row north of him, there was a man inside a cart."
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,8,Ira,0,7,9,False,False,He was in a corner of the Pickleball Court.
+puzzle-the-retirement-community-medium,The Retirement Community,medium,10,10,9,Violet,1,4,2,False,True,The Victim. She was alone with the murderer.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,0,Ayla,1,3,8,True,False,She was beside a shrub.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,1,Brandon,0,1,1,False,False,He was beside a table.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,2,Christa,1,7,0,False,False,She was one column west of a woman sitting on a horse.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,3,Dolores,1,4,6,False,False,She was in the fifth column.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,4,Evangeline,1,8,2,False,False,She was in the Stable.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,5,Finn,0,5,5,False,False,He was sitting on a horse in the Training Ring.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,6,Gabby,1,0,3,False,False,She was in the Tool Shed with Brandon.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,7,Heidi,1,2,4,False,False,She was on a mud puddle.
+puzzle-the-riding-lesson-easy,The Riding Lesson,easy,9,9,8,Vanessa,1,6,7,False,True,The Victim. She was alone with the murderer.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,0,Anthony,0,8,6,False,False,He was sitting in a chair.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,1,Ben,0,1,3,False,False,"He was on the Mezzanine, beside a shelf."
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,2,Cora,1,4,8,True,False,She was beside the sign in the Best Sellers area.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,3,Delilah,1,5,2,False,False,She was in the Fiction area.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,4,Everly,1,6,0,False,False,She was in the top row.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,5,Fritz,0,0,5,False,False,He was not beside a table.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,6,Gwen,1,3,1,False,False,She was in the Non Fiction area.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,7,Hartley,0,7,4,False,False,He was in the Stairs. He was in the fifth row.
+puzzle-the-waterstones-bookshop-easy,The Waterstones Bookshop,easy,9,9,8,Vincent,0,2,7,False,True,The Victim. He was alone with the murderer.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,0,Austin,0,4,0,False,False,He was not beside a table.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,1,Benton,0,6,8,False,False,He was in the bottom row.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,2,Chloe,1,3,7,False,False,She was beside a shelf.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,3,Dawn,1,7,3,False,False,She was east of Benton. She was not beside a table.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,4,Elodie,1,5,5,True,False,She was in the Basement. She was not beside the TV.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,5,Fred,0,2,4,False,False,He was alone. He was sitting in a chair.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,6,Gino,0,0,1,False,False,He was in the Bathroom.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,7,Herman,0,8,2,False,False,He was beside a table.
+puzzle-the-wine-cellar-hard,The Wine Cellar,hard,9,9,8,Vin,0,1,6,False,True,The Victim. He was alone with the murderer.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,0,Alfred,0.000000,,,False,False,He was exactly one row
+puzzle-the-zoo-expert,The Zoo,expert,16,16,1,Barry,0.000000,,,False,False,He was in Concessions
+puzzle-the-zoo-expert,The Zoo,expert,16,16,2,Carolyn,1.000000,,,False,False,She was exactly one row
+puzzle-the-zoo-expert,The Zoo,expert,16,16,3,Deborah,1.000000,,,False,False,She was in the Main Area.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,4,Eloise,1.000000,,,False,False,She was beside a table.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,5,Flavia,1.000000,,,False,False,She was beside a chair.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,6,Gordon,0.000000,,,False,False,He was sitting in a chair.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,7,Henry,0.000000,,,False,False,He was alone.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,8,Ivan,0.000000,,,False,False,He was beside an animal.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,9,Jim,0.000000,,,True,False,"He was not in water,"
+puzzle-the-zoo-expert,The Zoo,expert,16,16,10,Kaiden,1.000000,,,False,False,She was alone with
+puzzle-the-zoo-expert,The Zoo,expert,16,16,11,Langston,0.000000,,,False,False,He was in water.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,12,Mara,1.000000,,,False,False,She was in the 2nd column.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,13,Nancy,1.000000,,,False,False,She was beside a tree.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,14,Oliver,0.000000,,,False,False,He was beside a boulder.
+puzzle-the-zoo-expert,The Zoo,expert,16,16,15,Vlad,0.000000,,,False,True,The Victim. He was alone with the murderer.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,0,Archer,0,8,5,False,False,He was beside a table.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,1,Brooke,1,7,7,False,False,She was beside some flowers.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,2,Crystal,1,4,1,False,False,She was in the fifth column.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,3,Daisy,1,3,8,False,False,She was on the Porch.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,4,Ernie,0,5,0,False,False,He was northeast of Crystal.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,5,Finn,0,6,6,False,False,He was in a corner of his area.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,6,Giulia,1,1,3,True,False,She was with someone who was beside a tree.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,7,Harper,1,2,4,False,False,She was sitting in a chair.
+puzzle-white-wedding-medium,White Wedding,medium,9,9,8,Vikram,0,0,2,False,True,The Victim. He was alone with the murderer.

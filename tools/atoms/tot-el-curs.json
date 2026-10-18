@@ -1,0 +1,326 @@
+{
+ "id": "tot-el-curs",
+ "title": "Tot el curs",
+ "difficulty": "difícil",
+ "n": 9,
+ "mati_rows": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "mode": "extended",
+ "allowed_types": [
+  "beside",
+  "cornerGrid",
+  "inCorner",
+  "notCorner",
+  "notRoom",
+  "notbeside",
+  "on",
+  "onNone",
+  "room"
+ ],
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 2
+  },
+  {
+   "id": "ind",
+   "name": "EA La Industrial",
+   "short": "La Industrial",
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "cols": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "demand": 1
+  },
+  {
+   "id": "ali",
+   "name": "Institut dels Aliments",
+   "short": "Inst. dels Aliments",
+   "rows": [
+    3,
+    4
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "demand": 2
+  },
+  {
+   "id": "esc",
+   "name": "INS Escola del Treball",
+   "short": "Escola del Treball",
+   "rows": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 2
+  },
+  {
+   "id": "seg",
+   "name": "Institut Salvador Seguí",
+   "short": "Salvador Seguí",
+   "rows": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "cols": [
+    4,
+    5
+   ],
+   "demand": 1
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "cols": [
+    6,
+    7,
+    8
+   ],
+   "demand": 1
+  }
+ ],
+ "ils": [
+  {
+   "name": "Oscar",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "O"
+  },
+  {
+   "name": "José Javier",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "JJ"
+  },
+  {
+   "name": "Carla",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "C"
+  },
+  {
+   "name": "Judit",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "J"
+  },
+  {
+   "name": "Marc",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "Mc"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Miriam",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "M"
+  },
+  {
+   "name": "Irene",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "I"
+  },
+  {
+   "name": "Laura G",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "LG"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,1": "Catifa",
+  "0,3": "Cadira",
+  "0,4": "Banc",
+  "0,6": "Rellotge",
+  "0,7": "Pissarra",
+  "0,8": "Estoreta",
+  "1,0": "Pissarra",
+  "1,6": "Rellotge",
+  "1,7": "Taula",
+  "1,8": "Taula",
+  "2,1": "Taula",
+  "2,2": "Taula",
+  "2,4": "Catifa",
+  "2,5": "Cadira",
+  "2,8": "Lavabo",
+  "3,2": "Taula",
+  "4,2": "Banc",
+  "4,4": "Pissarra",
+  "4,8": "Banc",
+  "5,4": "Lavabo",
+  "5,6": "Estoreta",
+  "5,8": "Màquina de cafè",
+  "6,0": "Catifa",
+  "7,0": "Banc",
+  "8,8": "Pissarra"
+ },
+ "target": {
+  "Oscar": [
+   3,
+   8
+  ],
+  "José Javier": [
+   0,
+   1
+  ],
+  "Carla": [
+   4,
+   5
+  ],
+  "Judit": [
+   2,
+   6
+  ],
+  "Marc": [
+   1,
+   2
+  ],
+  "Aroha": [
+   6,
+   7
+  ],
+  "Miriam": [
+   8,
+   4
+  ],
+  "Irene": [
+   7,
+   0
+  ],
+  "Laura G": [
+   5,
+   3
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "on",
+   "i": 1,
+   "obj": "Catifa"
+  },
+  {
+   "type": "inCorner",
+   "i": 8
+  },
+  {
+   "type": "notbeside",
+   "i": 5,
+   "obj": "Màquina de cafè"
+  },
+  {
+   "type": "inCorner",
+   "i": 6
+  },
+  {
+   "type": "notRoom",
+   "i": 9,
+   "cen": "ali"
+  },
+  {
+   "type": "beside",
+   "i": 7,
+   "obj": "Catifa"
+  },
+  {
+   "type": "beside",
+   "i": 3,
+   "obj": "Cadira"
+  },
+  {
+   "type": "room",
+   "i": 4,
+   "cen": "fep"
+  },
+  {
+   "type": "room",
+   "i": 8,
+   "cen": "esc"
+  },
+  {
+   "type": "notCorner",
+   "i": 1
+  },
+  {
+   "type": "notCorner",
+   "i": 2
+  },
+  {
+   "type": "notCorner",
+   "i": 3
+  },
+  {
+   "type": "onNone",
+   "i": 0,
+   "obj": "Banc"
+  }
+ ],
+ "reveal": "L'última plaça lliure era R4 C9, a l'Institut dels Aliments. Oscar hi podia seure, i Laura M no, perquè no era enlloc de l'Institut dels Aliments. Per això Laura M es queda sense plaça."
+}

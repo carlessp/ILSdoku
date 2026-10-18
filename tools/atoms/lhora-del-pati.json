@@ -1,0 +1,220 @@
+{
+ "id": "lhora-del-pati",
+ "title": "L'hora del pati",
+ "difficulty": "fàcil",
+ "n": 6,
+ "mati_rows": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "allowed_types": [
+  "alone",
+  "beside",
+  "cornerGrid",
+  "inCorner",
+  "notCorner",
+  "notRoom",
+  "notbeside",
+  "on",
+  "onNone",
+  "onlyon",
+  "room",
+  "withChar"
+ ],
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    0,
+    1,
+    2
+   ],
+   "demand": 2
+  },
+  {
+   "id": "ali",
+   "name": "Institut dels Aliments",
+   "short": "Inst. dels Aliments",
+   "rows": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "cols": [
+    3,
+    4,
+    5
+   ],
+   "demand": 2
+  },
+  {
+   "id": "esc",
+   "name": "INS Escola del Treball",
+   "short": "Escola del Treball",
+   "rows": [
+    4,
+    5
+   ],
+   "cols": [
+    0,
+    1,
+    2
+   ],
+   "demand": 1
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    4,
+    5
+   ],
+   "cols": [
+    3,
+    4,
+    5
+   ],
+   "demand": 1
+  }
+ ],
+ "ils": [
+  {
+   "name": "Oscar",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "O"
+  },
+  {
+   "name": "José Javier",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "JJ"
+  },
+  {
+   "name": "Carla",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "C"
+  },
+  {
+   "name": "Judit",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "J"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Miriam",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "M"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,0": "Banc",
+  "0,4": "Pissarra",
+  "1,1": "Prestatge",
+  "1,2": "Banc",
+  "1,4": "Banc",
+  "2,0": "Rellotge",
+  "2,4": "Banc",
+  "2,5": "Rellotge",
+  "3,3": "Catifa",
+  "4,1": "Cadira",
+  "4,5": "Banc",
+  "5,3": "Estoreta"
+ },
+ "target": {
+  "Oscar": [
+   1,
+   2
+  ],
+  "José Javier": [
+   3,
+   0
+  ],
+  "Carla": [
+   0,
+   3
+  ],
+  "Judit": [
+   2,
+   4
+  ],
+  "Aroha": [
+   4,
+   1
+  ],
+  "Miriam": [
+   5,
+   5
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "onlyon",
+   "i": 4,
+   "obj": "Cadira"
+  },
+  {
+   "type": "beside",
+   "i": 2,
+   "obj": "Pissarra"
+  },
+  {
+   "type": "beside",
+   "i": 5,
+   "obj": "Banc"
+  },
+  {
+   "type": "beside",
+   "i": 1,
+   "obj": "Rellotge"
+  },
+  {
+   "type": "onNone",
+   "i": 0,
+   "obj": "Catifa"
+  },
+  {
+   "type": "notRoom",
+   "i": 6,
+   "cen": "fep"
+  },
+  {
+   "type": "beside",
+   "i": 3,
+   "obj": "Rellotge"
+  },
+  {
+   "type": "inCorner",
+   "i": 1
+  }
+ ],
+ "reveal": "L'última plaça lliure era R2 C3, al FEP Aprenents EE, sobre un banc. Oscar hi podia seure, i Laura M no, perquè no era enlloc del FEP Aprenents EE. Per això Laura M es queda sense plaça."
+}
