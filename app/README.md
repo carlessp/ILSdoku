@@ -88,7 +88,16 @@ en tornar a obrir el cas. Tot es veu i es gestiona al botó **📈 Progrés**:
 
 **Sincronització amb Firebase (opcional).** Amb comptes de Google i Firestore, el
 progrés viatja entre dispositius. Sense configurar, el botó ho explica i el joc
-funciona igual. Passes:
+funciona igual.
+
+> ✅ **Projecte ja creat** (18/10/2026): `ilsdoku` (pla gratuït Spark), aplicació web
+> «ILSdoku web», Firestore a `europe-southwest1` amb les regles desplegades
+> (`firestore.rules`) i les claus a `app/firebase-config.js`. Només queda **un clic**
+> a la consola: <https://console.firebase.google.com/project/ilsdoku/authentication>
+> → **Comença** (inicialitza Auth). Després, el proveïdor de Google i els dominis
+> autoritzats es poden acabar de configurar des d'aquí o a la mateixa consola.
+
+Passes completes (per si es refer fes d'un altre projecte):
 
 1. **Crea el projecte** a <https://console.firebase.google.com> (per exemple `ilsdoku`).
 2. **Afegeix-hi una aplicació web** (icona `</>`) i copia l'objecte de configuració a

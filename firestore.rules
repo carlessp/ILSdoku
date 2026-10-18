@@ -1,0 +1,15 @@
+rules_version = '2';
+
+// ILSdoku — cada usuari només pot llegir i escriure el seu propi document.
+// El joc desa: sobrenom, registres dels casos (temps, pistes, enviaments) i
+// el taulell en curs. No s'hi desa cap correu.
+//
+// Si vols limitar-ho als comptes del centre, afegeix-hi la condició del domini:
+//   && request.auth.token.email.matches('.*@xtec\\.cat$')
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}
