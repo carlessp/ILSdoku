@@ -484,3 +484,35 @@ kbd {
 .tip.on { opacity: 1; transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
 @media print { .tip { display: none !important; } }
+
+/* ------------------------------------------------------------------ *
+ * Progrés del jugador: botó del topbar i modal «El meu progrés».
+ * ------------------------------------------------------------------ */
+.badge-count {
+  display: inline-block;
+  margin-left: 6px;
+  min-width: 18px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--accent, #2f6f5e);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.pg-total { font-weight: 700; }
+.pg-scroll { max-height: 320px; overflow: auto; margin: 6px 0 12px; }
+.pg-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.pg-table th, .pg-table td { padding: 4px 8px; text-align: left; border-bottom: 1px solid rgba(74,68,59,.12); }
+.pg-table th { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-soft); }
+.pg-table .pg-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pg-dim { color: var(--ink-soft); font-size: .85rem; }
+.pg-h3 { margin: 18px 0 6px; font-size: 1rem; }
+.pg-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 2px; }
+.pg-actions .danger { border-color: #c46; color: #a33; }
+#progress-account p { margin: 0 0 8px; }
+#progress-nick {
+  font: inherit; padding: 4px 8px; border: 1px solid var(--line, #ddd);
+  border-radius: 8px; background: #fff; max-width: 240px;
+}
+#case-timer { font-variant-numeric: tabular-nums; }

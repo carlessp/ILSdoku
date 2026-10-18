@@ -73,7 +73,63 @@ El joc admet paràmetres a l'URL: `joc.html?case=<id>` obre un cas concret,
 - **Notes a la vista:** les notes (inicials) es dibuixen **per sobre** de la imatge de
   l'objecte, amb un fons clar, perquè sempre es puguin llegir.
 
-## Estructura de fitxers
+## Progrés i sincronització
+
+**Progrés local (actiu sempre).** El joc desa a `localStorage` (clau
+`ilsdoku.progress.v1`): els casos resolts amb el **millor temps**, les **pistes** i els
+**enviaments** gastats, i la **partida en curs** (fitxes, notes i creus), que es reprèn
+en tornar a obrir el cas. Tot es veu i es gestiona al botó **📈 Progrés**:
+
+- **✓ al selector** dels casos ja resolts i un comptador al botó.
+- **Exporta** / **Importa** (`ilsdoku-progres.json`) per passar el progrés a un altre
+  navegador o tenir-ne una còpia.
+- **Reinicia el progrés** (només d'aquest navegador) i un **sobrenom** opcional.
+- El rellotge de la partida surt a la capçalera del tauler (`⏱`).
+
+**Sincronització amb Firebase (opcional).** Amb comptes de Google i Firestore, el
+progrés viatja entre dispositius. Sense configurar, el botó ho explica i el joc
+funciona igual. Passes:
+
+1. **Crea el projecte** a <https://console.firebase.google.com> (per exemple `ilsdoku`).
+2. **Afegeix-hi una aplicació web** (icona `</>`) i copia l'objecte de configuració a
+   `app/firebase-config.js` (Substituint els camps buits: `apiKey`, `authDomain`,
+   `projectId`, `appId`…).
+3. **Authentication → Comença → Proveïdors → Google: activa'l.**
+   A *Authentication → Settings → Authorized domains* hi ha d'haver
+   **`carlessp.github.io`** (a més de `localhost`).
+4. **Firestore Database → Crea la base de dades** (mode producció) i enganxa-hi
+   aquestes regles (cada usuari només veu i toca el seu document):
+
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /users/{uid} {
+         allow read, write: if request.auth != null && request.auth.uid == uid;
+       }
+     }
+   }
+   ```
+
+   Si vols limitar-ho als comptes del centre, canvia la condició per
+   `if request.auth != null && request.auth.uid == uid &&
+   request.auth.token.email.matches('.*@xtec\\.cat$')`.
+5. **Publica** (`git push`) i obre **📈 Progrés → Inicia sessió amb Google**.
+
+Detalls tècnics: `app/sync.js` carrega l'SDK de Firebase des del CDN (mòduls ES,
+versió fixada; si no hi ha xarxa, el joc segueix en local) i desa el progrés a
+`users/{uid}` de Firestore. Abans de pujar res, **baixa** el document remot i el
+fusiona amb el local (millor temps, `solved` i el taulell més recent), així que dos
+dispositius no es trepitgen. A Firestore només s'hi desen el **sobrenom**, els
+**registres** i l'**identificador** del compte: el correu no s'hi guarda (només es
+mostra a la interfície).
+
+> ⚠️ Comptes del Departament: algunes organitzacions bloquegen les aplicacions
+> OAuth de tercers. Prova-ho primer amb un compte; si `xtec.cat` no deixa entrar,
+> es pot fer la prova amb comptes personals de Google o passar a la variant del
+> full de càlcul (Apps Script).
+
+
 
 ```
 app/
@@ -192,6 +248,9 @@ resposta (vegeu `../ref/ILSdoku-Disseny.md`, §5.1).
   d'objectes, unicitat, «al costat», lloc i negacions** (sense pistes de distància), una
   **pista negativa decisiva** per a la ILS que queda fora i una **frase de revelació**
   (`reveal`) que n'explica el perquè.
+- ✅ **Progrés del jugador**: casos resolts amb millor temps, pistes i enviaments, partida
+  en curs que es reprèn, exportació/importació i ⟳ opcional amb Firebase (comptes de
+  Google) per tenir-ho sincronitzat entre dispositius. Vegeu § «Progrés i sincronització».
 - ✅ **Glossari** d'objectes i símbols (modal) i **X automàtiques** de fila/columna/centre.
 - ✅ **Bombolla d'ajuda** en passar el cursor per una casella: diu quin objecte és
   (i si és ocupable), quina ILS hi ha col·locada, les notes, el centre amb la seva

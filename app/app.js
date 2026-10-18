@@ -18,6 +18,9 @@
   var dragHistory = false;
   var downCell = null;
   var lastCell = null;
+  var t0 = null;              // inici de la partida (per al temporitzador)
+  var tickTimer = null;       // interval que refresca el rellotge
+  var saveTimer = null;       // desat automàtic de la partida en curs
   var hintIndex = 0;
   var flashCells = [];
   var prevAutoX = {};        // X automàtiques ja mostrades (per animar només les noves)
@@ -30,7 +33,8 @@
       placements: {},        // ilsId -> {r, c}
       notes: {},             // "r,c" -> [ilsId, ...]
       xmarks: {},            // "r,c" -> true
-      solved: false
+      solved: false,
+      submits: 0             // enviaments fets (per a les estadístiques)
     };
   }
 
@@ -38,6 +42,66 @@
   function pushHistory() {
     history.push(snapshot());
     if (history.length > 120) history.shift();
+    scheduleSave();               // desa la partida en curs (amb retard)
+  }
+
+  /* ---------- Progrés: temporitzador i desat automàtic ---------- */
+
+  function formatMs(ms) {
+    var s = Math.max(0, Math.round(ms / 1000));
+    var h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), ss = s % 60;
+    function dos(n) { return (n < 10 ? "0" : "") + n; }
+    return h ? (h + ":" + dos(m) + ":" + dos(ss)) : (m + ":" + dos(ss));
+  }
+
+  function pintaRellotge() {
+    var el = document.getElementById("case-timer");
+    if (!el) return;
+    if (state && state.solved && el.dataset.final) {
+      el.textContent = el.dataset.final;
+      return;
+    }
+    el.textContent = t0 ? formatMs(Date.now() - t0) : "0:00";
+  }
+
+  function startTick() {
+    stopTick();
+    pintaRellotge();
+    tickTimer = setInterval(pintaRellotge, 1000);
+  }
+
+  function stopTick() {
+    if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
+    pintaRellotge();
+  }
+
+  function boardActual() {
+    if (!state) return null;
+    return {
+      placements: state.placements,
+      notes: state.notes,
+      xmarks: state.xmarks,
+      solved: state.solved
+    };
+  }
+
+  function scheduleSave() {
+    if (!window.ILSDOKU_SAVE_BOARD || !caseData || !state) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveTimer = null;
+      if (window.ILSDOKU_SAVE_BOARD && caseData && state) {
+        window.ILSDOKU_SAVE_BOARD(caseData.id, boardActual());
+      }
+    }, 600);
+  }
+
+  function flushSave() {
+    clearTimeout(saveTimer);
+    saveTimer = null;
+    if (window.ILSDOKU_SAVE_BOARD && caseData && state) {
+      window.ILSDOKU_SAVE_BOARD(caseData.id, boardActual());
+    }
   }
   function undo() {
     if (!history.length) return;
@@ -203,11 +267,24 @@
 
   function submit() {
     if (state.solved) return;
+    state.submits++;
     var v = validate();
     if (v.correct === v.total && !v.sensePlaced) {
       state.solved = true;
+      var ms = t0 ? (Date.now() - t0) : null;
+      t0 = null;
+      stopTick();
       render();
-      showWin(v.senseIl);
+      showWin(v.senseIl, ms);
+      flushSave();
+      if (window.ILSDOKU_SAVE_SOLVE) {
+        window.ILSDOKU_SAVE_SOLVE({
+          caseId: caseData.id,
+          ms: ms,
+          hints: hintIndex,
+          submits: state.submits
+        });
+      }
       return;
     }
     var msg = document.getElementById("message");
@@ -225,11 +302,12 @@
     render();
   }
 
-  function showWin(senseIl) {
+  function showWin(senseIl, ms) {
     var msg = document.getElementById("message");
     msg.className = "message win";
+    var temps = (ms != null) ? " en <strong>" + formatMs(ms) + "</strong>" : "";
     msg.innerHTML = "<strong>Horari quadrat!</strong> Has trobat qui es queda sense plaça: <strong>" +
-      (senseIl ? esc(senseIl.name) : "?") + "</strong>. 🎉" +
+      (senseIl ? esc(senseIl.name) : "?") + "</strong>" + temps + ". 🎉" +
       (caseData.reveal ? "<p class='reveal'>" + esc(caseData.reveal) + "</p>" : "");
   }
 
@@ -248,6 +326,8 @@
     state = freshState();
     history = [];
     hintIndex = 0;
+    t0 = Date.now();
+    startTick();
     prevAutoX = {};
     lastPlaced = null;
     var msg = document.getElementById("message");
@@ -647,9 +727,12 @@
   // ---------- Modal ----------
   function openModal(id) { document.getElementById(id).classList.remove("hidden"); }
   function closeModal(id) { document.getElementById(id).classList.add("hidden"); }
+  window.ILSDOKU_OPEN_MODAL = openModal;
+  window.ILSDOKU_CLOSE_MODAL = closeModal;
 
   // ---------- Càrrega ----------
   function loadCase(idx) {
+    flushSave();                       // el cas que deixem, desat de seguida
     caseData = CASES[idx] || CASES[0];
     document.getElementById("case-title").textContent = caseData.title;
     document.getElementById("case-diff").textContent = caseData.difficulty;
@@ -659,6 +742,25 @@
       caseData.ils.length + " candidates";
     renderGlossary();
     reset();
+    // reprèn la partida desada (si n'hi ha)
+    var guardat = window.ILSDOKU_LOAD_BOARD ? window.ILSDOKU_LOAD_BOARD(caseData.id) : null;
+    if (guardat) {
+      state.placements = guardat.placements || {};
+      state.notes = guardat.notes || {};
+      state.xmarks = guardat.xmarks || {};
+      if (guardat.solved) {
+        state.solved = true;
+        t0 = null;
+        stopTick();
+        var el = document.getElementById("case-timer");
+        if (el) el.dataset.final = "✔";
+        var sense = null;
+        caseData.ils.forEach(function (i) { if (!i.solution) sense = i; });
+        showWin(sense);
+        flushSave();
+      }
+      render();
+    }
   }
 
   // ---------- Enllaços directes (?case=<id>, ?ajuda, ?glossari) ----------
@@ -697,6 +799,7 @@
       o.textContent = cs.title + " (" + cs.grid.w + "×" + cs.grid.h + ")";
       g.appendChild(o);
     });
+    if (window.ILSDOKU_ANNOTATE_PICKER) window.ILSDOKU_ANNOTATE_PICKER(picker);
     picker.addEventListener("change", function () { loadCase(+this.value); });
 
     document.getElementById("btn-x").addEventListener("click", function () { setMode("x"); });

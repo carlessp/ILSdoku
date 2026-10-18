@@ -21,6 +21,7 @@
     <select id="case-picker"></select>
     <span class="badge-diff" id="case-diff">—</span>
   </div>
+  <button class="tool ghost" id="btn-progress" title="El meu progrés">📈 Progrés<span class="badge-count hidden" id="progress-badge"></span></button>
   <button class="tool ghost" id="btn-glossary">📖 Glossari</button>
   <a class="tool ghost" id="btn-print-link" href="plantilla.html" style="text-decoration:none">🖨️ Plantilles</a>
   <button class="tool ghost" id="btn-help">❓ Com s'hi juga</button>
@@ -31,7 +32,9 @@
   <!-- Columna esquerra: tauler -->
   <section class="panel">
     <div class="panel-title" id="case-title">—</div>
-    <div style="padding:0 16px 6px; color:var(--ink-soft); font-size:.85rem;" id="case-meta">—</div>
+    <div style="padding:0 16px 6px; color:var(--ink-soft); font-size:.85rem;">
+      <span id="case-meta">—</span> · ⏱ <span id="case-timer" title="Temps d'aquesta partida">0:00</span>
+    </div>
 
     <div class="board-wrap">
       <div class="board" id="board"></div>
@@ -137,9 +140,40 @@
   </div>
 </div>
 
+<!-- Modal: el meu progrés -->
+<div class="modal-backdrop hidden" id="modal-progress">
+  <div class="modal">
+    <h2>El meu progrés</h2>
+    <div class="modal-body">
+      <p class="pg-total" id="progress-total">—</p>
+      <div class="pg-scroll"><table class="pg-table" id="progress-table"></table></div>
+      <p class="pg-dim">El progrés es desa en aquest navegador (no cal compte). Pots
+        exportar-lo per passar-lo a un altre dispositiu o per guardar-ne una còpia.</p>
+      <p>
+        <label for="progress-nick">Sobrenom (opcional):</label>
+        <input type="text" id="progress-nick" maxlength="24" placeholder="com vols aparèixer">
+      </p>
+      <div class="pg-actions">
+        <button class="tool ghost" id="progress-export">⬇ Exporta</button>
+        <button class="tool ghost" id="progress-import">⬆ Importa</button>
+        <input type="file" id="progress-import-file" accept="application/json,.json" hidden>
+        <button class="tool ghost" id="progress-reset">🗑 Reinicia el progrés</button>
+      </div>
+      <h3 class="pg-h3">Sincronització</h3>
+      <div id="progress-account"></div>
+    </div>
+    <div class="modal-actions">
+      <button class="tool primary" id="progress-close">Tanca</button>
+    </div>
+  </div>
+</div>
+
 <div class="tip" id="tip" role="tooltip" aria-hidden="true"></div>
 
 <script src="data.js"></script>
+<script src="firebase-config.js"></script>
+<script src="progress.js"></script>
 <script src="app.js"></script>
+<script type="module" src="sync.js"></script>
 </body>
 </html>

@@ -507,6 +507,10 @@ Reaprofitant la del Murdoku:
 - **Glossari:** modal amb la imatge i la descripció de cada objecte (ocupables i
   obstacles) i dels símbols del tauler (nota, fitxa, X, demanda…). Dades a
   `glossary` de cada cas.
+- **Progrés:** botó **📈 Progrés** amb els casos resolts (millor temps, pistes i
+  enviaments), la partida en curs que es reprèn, exportació/importació i
+  sincronització opcional amb Firebase (comptes de Google) — `app/progress.js` i
+  `app/sync.js`, amb la configuració a `app/firebase-config.js`.
 - **Bombolla d'ajuda:** en passar el cursor per una casella (o amb el focus del
   teclat) s'hi llegeix què hi ha: el nom de l'objecte i si és ocupable
   («Catifa · ocupable — FEP Aprenents»), la ILS col·locada amb el seu torn, les
