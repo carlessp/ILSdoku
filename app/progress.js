@@ -156,7 +156,87 @@
     return h ? (h + ":" + dos(m) + ":" + dos(ss)) : (m + ":" + dos(ss));
   }
 
+  /* ---- portada: fitxes marcades i bàner de resum ---- */
+
+  function idDelCasDe(tile) {
+    var a = tile.querySelector("a[href*='case=']");
+    if (!a) return null;
+    var m = /[?&]case=([^&]+)/.exec(a.getAttribute("href") || "");
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+
+  function markCards() {
+    var llistes = document.querySelectorAll("#levels-list, .levels-list");
+    if (!llistes.length) return;                 // no som a la portada
+    var tiles = document.querySelectorAll("article.case-tile, article");
+    if (!tiles.length) return;
+    var total = 0, fets = 0, millor = null, primerPendent = null;
+    Array.prototype.forEach.call(tiles, function (tile) {
+      var id = idDelCasDe(tile);
+      if (!id) return;
+      var cs = (window.ILSDOKU_CASES || []).filter(function (c) { return c.id === id; })[0];
+      if (!cs) return;
+      total++;
+      var rec = store.cases[id] || {};
+      var badge = tile.querySelector(".ct-badge");
+      if (rec.solved) {
+        fets++;
+        if (rec.bestMs != null && (millor == null || rec.bestMs < millor)) millor = rec.bestMs;
+        tile.classList.add("is-done");
+        if (!badge) {
+          badge = document.createElement("div");
+          badge.className = "ct-badge";
+          tile.appendChild(badge);
+        }
+        badge.textContent = "✅ Resolt" + (rec.bestMs != null ? " · " + formatMs(rec.bestMs) : "");
+      } else {
+        if (!primerPendent) primerPendent = cs;
+        tile.classList.remove("is-done");
+        if (badge && badge.parentNode) badge.parentNode.removeChild(badge);
+      }
+    });
+    if (!total) return;
+    var bàner = document.getElementById("progress-banner");
+    if (!bàner) {
+      bàner = document.createElement("div");
+      bàner.id = "progress-banner";
+      bàner.className = "progress-banner";
+      llistes[0].parentNode.insertBefore(bàner, llistes[0]);
+    }
+    var text;
+    if (fets === 0) {
+      text = "Encara no has resolt cap cas" +
+        (primerPendent ? " · <a href='joc.html?case=" + encodeURIComponent(primerPendent.id) + "'>comença pel primer →</a>" : "");
+    } else if (primerPendent) {
+      text = "Has resolt <strong>" + fets + "</strong> de " + total + " casos" +
+        (millor != null ? " · millor temps: <strong>" + formatMs(millor) + "</strong>" : "") +
+        " · <a href='joc.html?case=" + encodeURIComponent(primerPendent.id) + "'>segueix amb «" +
+        esc(primerPendent.title) + "» →</a>";
+    } else {
+      text = "🏆 Has resolt <strong>tots</strong> els casos (" + total + ")" +
+        (millor != null ? " · millor temps: <strong>" + formatMs(millor) + "</strong>" : "");
+    }
+    bàner.innerHTML = text;
+  }
+
+  function esc(t) {
+    return String(t == null ? "" : t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  // Observa la portada: landing.js construeix les fitxes després
+  function observaPortada() {
+    if (!document.getElementById("levels-list")) return;
+    var pendent = null;
+    var obs = new MutationObserver(function () {
+      clearTimeout(pendent);
+      pendent = setTimeout(function () { renderProgress(); }, 80);
+    });
+    obs.observe(document.getElementById("levels-list"), { childList: true, subtree: true });
+    setTimeout(function () { renderProgress(); }, 0);
+  }
+
   function renderProgress() {
+    markCards();
     if (!document.getElementById("progress-table")) return;
     var casos = window.ILSDOKU_CASES || [];
     var fets = casos.filter(function (c) { return window.ILSDOKU_HAS_SOLVED(c.id); }).length;
@@ -337,8 +417,13 @@
 
   load();
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () { initUI(); });
+    document.addEventListener("DOMContentLoaded", function () { initUI(); observaPortada(); });
   } else {
     initUI();
+    observaPortada();
+  }
+  // Quan la sessió es resol (o arriba el progrés del núvol), tornar a pintar
+  if (window.ILSDOKU_ACCOUNT) {
+    window.ILSDOKU_ACCOUNT.subscribe(function () { renderProgress(); });
   }
 })();

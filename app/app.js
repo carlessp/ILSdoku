@@ -751,13 +751,19 @@
       if (guardat.solved) {
         state.solved = true;
         t0 = null;
-        stopTick();
         var el = document.getElementById("case-timer");
         if (el) el.dataset.final = "✔";
+        stopTick();
         var sense = null;
         caseData.ils.forEach(function (i) { if (!i.solution) sense = i; });
         showWin(sense);
         flushSave();
+        // Si el taulell ja estava resolt però no en teníem el registre (per
+        // exemple si es va resoldre abans que existís el progrés), el creem.
+        if (window.ILSDOKU_SAVE_SOLVE &&
+            !(window.ILSDOKU_HAS_SOLVED && window.ILSDOKU_HAS_SOLVED(caseData.id))) {
+          window.ILSDOKU_SAVE_SOLVE({ caseId: caseData.id, ms: null, hints: null, submits: null });
+        }
       }
       render();
     }

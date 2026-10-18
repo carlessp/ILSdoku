@@ -86,6 +86,12 @@ en tornar a obrir el cas. Tot es veu i es gestiona al botó **📈 Progrés**:
 - **Reinicia el progrés** (només d'aquest navegador) i un **sobrenom** opcional.
 - El rellotge de la partida surt a la capçalera del tauler (`⏱`).
 
+**A la portada** les fitxes dels casos resolts surten marcades («✅ Resolt · 2:14») i, a
+sobre de la llista, un bàner de resum amb quants casos portes i un enllaç per continuar
+pel primer que et falta. Si un cas consta com a resolt però no en teníem el registre
+(per exemple perquè es va resoldre abans que existís aquesta funció), el registre es
+crea en tornar a obrir el cas.
+
 **Compte i sessió (sempre visible).** Al topbar de la portada i del joc hi ha
 l'indicador de compte (`app/account.js`): «👤 Inicia sessió» quan no hi ha sessió,
 el compte amb un punt verd quan sí. En clicar-lo s'obre el modal del compte
