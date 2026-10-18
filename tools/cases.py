@@ -377,6 +377,42 @@ CASE_SALA = {
 }
 
 # ordre de presentació (de més fàcil a més difícil)
+# 9) 10x10 — expert: cinc files de matí i cinc de tarda, amb columna compartida
+CASE_HORARIS = {
+    "id": "horaris-setembre",
+    "title": "Els horaris de setembre",
+    "difficulty": "expert",
+    "n": 10,
+    "mati_rows": [0, 1, 2, 3, 4],
+    "centres": [
+        {"id": "fep", "name": "FEP Aprenents EE", "short": "FEP Aprenents",
+         "rows": [0, 1, 2], "cols": [0, 1, 2, 3], "demand": 2},
+        {"id": "ind", "name": "EA La Industrial", "short": "La Industrial",
+         "rows": [0, 1, 2], "cols": [4, 5, 6, 7, 8, 9], "demand": 1},
+        {"id": "seg", "name": "Institut Salvador Seguí", "short": "Salvador Seguí",
+         "rows": [3, 4], "cols": [0, 1, 2, 3], "demand": 1},
+        {"id": "fpv", "name": "Institut d'FP Sanitària Vall d'Hebron", "short": "FP Vall d'Hebron",
+         "rows": [3, 4], "cols": [4, 5, 6, 7, 8, 9], "demand": 1},
+        {"id": "esc", "name": "INS Escola del Treball", "short": "Escola del Treball",
+         "rows": [5, 6], "cols": [0, 1, 2, 3, 4], "demand": 1},
+        {"id": "ali", "name": "Institut dels Aliments", "short": "Inst. dels Aliments",
+         "rows": [7, 8, 9], "cols": [0, 1, 2, 3, 4], "demand": 1},
+        {"id": "log", "name": "Institut de Logística de Barcelona", "short": "Inst. de Logística",
+         "rows": [5, 6, 7, 8, 9], "cols": [5, 6, 7, 8, 9], "demand": 3},
+    ],
+    "ils": ils("María Nuria", "Sara", "Joan", "Ruth", "Helena",
+               "Aroha", "Miriam", "Tatiana", "Irene", "Laura G", "Laura M"),
+    "out": "Laura M",
+    "seed": 239,
+    "object_density": 0.30,
+    "object_mix": 0.5,
+    "mode": "extended",
+    "target": None,
+    "allowed_types": {  # només pistes unàries: al tauler gran són les que poden podar
+        "room", "notRoom", "on", "onNone", "beside", "notbeside",
+        "inCorner", "notCorner", "cornerGrid"},
+}
+
 CASES = [
     CASE_PRIMER_DIA,
     CASE_BENVINGUDA,
@@ -389,4 +425,5 @@ CASES = [
     CASE_SALA,
     CASE_GRAN,
     CASE_SETMANA,
+    CASE_HORARIS,
 ]

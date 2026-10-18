@@ -4713,5 +4713,599 @@ window.ILSDOKU_CASES = [
       "Laura G: és a la fila 6, columna 4 (Escola del Treball).",
       "Per acabar, la incògnita: L'última plaça lliure era R4 C9, a l'Institut dels Aliments. Oscar hi podia seure, i Laura M no, perquè no era enlloc de l'Institut dels Aliments. Per això Laura M es queda sense plaça."
     ]
+  },
+  {
+    "id": "horaris-setembre",
+    "title": "Els horaris de setembre",
+    "difficulty": "expert",
+    "grid": {
+      "w": 10,
+      "h": 10
+    },
+    "zones": [
+      {
+        "id": "mati",
+        "name": "Matí",
+        "rows": [
+          0,
+          4
+        ],
+        "color": "#eaf3fc"
+      },
+      {
+        "id": "tarda",
+        "name": "Tarda",
+        "rows": [
+          5,
+          9
+        ],
+        "color": "#fdf2e4"
+      }
+    ],
+    "centres": [
+      {
+        "id": "fep",
+        "name": "FEP Aprenents EE",
+        "short": "FEP Aprenents",
+        "demand": 2,
+        "zone": "mati",
+        "rect": [
+          0,
+          0,
+          2,
+          3
+        ],
+        "color": "#d8ecfa"
+      },
+      {
+        "id": "ind",
+        "name": "EA La Industrial",
+        "short": "La Industrial",
+        "demand": 1,
+        "zone": "mati",
+        "rect": [
+          0,
+          4,
+          2,
+          9
+        ],
+        "color": "#dcefdd"
+      },
+      {
+        "id": "seg",
+        "name": "Institut Salvador Seguí",
+        "short": "Salvador Seguí",
+        "demand": 1,
+        "zone": "mati",
+        "rect": [
+          3,
+          0,
+          4,
+          3
+        ],
+        "color": "#fbe2cf"
+      },
+      {
+        "id": "fpv",
+        "name": "Institut d'FP Sanitària Vall d'Hebron",
+        "short": "FP Vall d'Hebron",
+        "demand": 1,
+        "zone": "mati",
+        "rect": [
+          3,
+          4,
+          4,
+          9
+        ],
+        "color": "#ece0f6"
+      },
+      {
+        "id": "esc",
+        "name": "INS Escola del Treball",
+        "short": "Escola del Treball",
+        "demand": 1,
+        "zone": "tarda",
+        "rect": [
+          5,
+          0,
+          6,
+          4
+        ],
+        "color": "#e6f0d8"
+      },
+      {
+        "id": "ali",
+        "name": "Institut dels Aliments",
+        "short": "Inst. dels Aliments",
+        "demand": 1,
+        "zone": "tarda",
+        "rect": [
+          7,
+          0,
+          9,
+          4
+        ],
+        "color": "#fde8dc"
+      },
+      {
+        "id": "log",
+        "name": "Institut de Logística de Barcelona",
+        "short": "Inst. de Logística",
+        "demand": 3,
+        "zone": "tarda",
+        "rect": [
+          5,
+          5,
+          9,
+          9
+        ],
+        "color": "#e4eef6"
+      }
+    ],
+    "objects": [
+      {
+        "r": 0,
+        "c": 0,
+        "name": "Cadira",
+        "icon": "🪑",
+        "img": "img/cadira.png",
+        "occupiable": true
+      },
+      {
+        "r": 0,
+        "c": 4,
+        "name": "Cadira",
+        "icon": "🪑",
+        "img": "img/cadira.png",
+        "occupiable": true
+      },
+      {
+        "r": 0,
+        "c": 6,
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true
+      },
+      {
+        "r": 0,
+        "c": 8,
+        "name": "Prestatge",
+        "icon": "📚",
+        "img": "img/prestatge.png",
+        "occupiable": false
+      },
+      {
+        "r": 1,
+        "c": 2,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      },
+      {
+        "r": 1,
+        "c": 5,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      },
+      {
+        "r": 2,
+        "c": 0,
+        "name": "Cadira",
+        "icon": "🪑",
+        "img": "img/cadira.png",
+        "occupiable": true
+      },
+      {
+        "r": 2,
+        "c": 2,
+        "name": "Taula",
+        "icon": "🍽️",
+        "img": "img/taula.png",
+        "occupiable": false
+      },
+      {
+        "r": 2,
+        "c": 5,
+        "name": "Ordinador",
+        "icon": "💻",
+        "img": "img/ordinador.png",
+        "occupiable": false
+      },
+      {
+        "r": 2,
+        "c": 6,
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true
+      },
+      {
+        "r": 2,
+        "c": 9,
+        "name": "Catifa",
+        "icon": "🟫",
+        "img": "img/catifa.png",
+        "occupiable": true
+      },
+      {
+        "r": 3,
+        "c": 3,
+        "name": "Cadira",
+        "icon": "🪑",
+        "img": "img/cadira.png",
+        "occupiable": true
+      },
+      {
+        "r": 4,
+        "c": 4,
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true
+      },
+      {
+        "r": 4,
+        "c": 5,
+        "name": "Pissarra",
+        "icon": "📝",
+        "img": "img/pissarra.png",
+        "occupiable": false
+      },
+      {
+        "r": 4,
+        "c": 6,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      },
+      {
+        "r": 4,
+        "c": 7,
+        "name": "Màquina de cafè",
+        "icon": "☕",
+        "img": "img/maquina_cafe.png",
+        "occupiable": false
+      },
+      {
+        "r": 5,
+        "c": 1,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      },
+      {
+        "r": 6,
+        "c": 0,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      },
+      {
+        "r": 6,
+        "c": 3,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      },
+      {
+        "r": 6,
+        "c": 6,
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true
+      },
+      {
+        "r": 6,
+        "c": 7,
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true
+      },
+      {
+        "r": 6,
+        "c": 8,
+        "name": "Taula",
+        "icon": "🍽️",
+        "img": "img/taula.png",
+        "occupiable": false
+      },
+      {
+        "r": 7,
+        "c": 2,
+        "name": "Rellotge",
+        "icon": "🕐",
+        "img": "img/rellotge.png",
+        "occupiable": false
+      },
+      {
+        "r": 7,
+        "c": 6,
+        "name": "Pissarra",
+        "icon": "📝",
+        "img": "img/pissarra.png",
+        "occupiable": false
+      },
+      {
+        "r": 8,
+        "c": 1,
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true
+      },
+      {
+        "r": 8,
+        "c": 7,
+        "name": "Prestatge",
+        "icon": "📚",
+        "img": "img/prestatge.png",
+        "occupiable": false
+      },
+      {
+        "r": 8,
+        "c": 8,
+        "name": "Màquina de cafè",
+        "icon": "☕",
+        "img": "img/maquina_cafe.png",
+        "occupiable": false
+      },
+      {
+        "r": 9,
+        "c": 2,
+        "name": "Rellotge",
+        "icon": "🕐",
+        "img": "img/rellotge.png",
+        "occupiable": false
+      },
+      {
+        "r": 9,
+        "c": 3,
+        "name": "Rellotge",
+        "icon": "🕐",
+        "img": "img/rellotge.png",
+        "occupiable": false
+      },
+      {
+        "r": 9,
+        "c": 4,
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true
+      }
+    ],
+    "glossary": [
+      {
+        "name": "Cadira",
+        "icon": "🪑",
+        "img": "img/cadira.png",
+        "occupiable": true,
+        "desc": "Seient de classe; una ILS s'hi pot asseure."
+      },
+      {
+        "name": "Catifa",
+        "icon": "🟫",
+        "img": "img/catifa.png",
+        "occupiable": true,
+        "desc": "Catifa de terra de l'aula; també és ocupable."
+      },
+      {
+        "name": "Estoreta",
+        "icon": "🟩",
+        "img": "img/estoreta.png",
+        "occupiable": true,
+        "desc": "Estoreta per seure a terra (n'hi ha una de sola)."
+      },
+      {
+        "name": "Banc",
+        "icon": "🛋️",
+        "img": "img/banc.png",
+        "occupiable": true,
+        "desc": "Banc del passadís (ocupa 2 caselles); n'hi ha un de sol."
+      },
+      {
+        "name": "Ordinador",
+        "icon": "💻",
+        "img": "img/ordinador.png",
+        "occupiable": false,
+        "desc": "Ordinador de l'aula."
+      },
+      {
+        "name": "Pissarra",
+        "icon": "📝",
+        "img": "img/pissarra.png",
+        "occupiable": false,
+        "desc": "Pissarra de classe."
+      },
+      {
+        "name": "Taula",
+        "icon": "🍽️",
+        "img": "img/taula.png",
+        "occupiable": false,
+        "desc": "Taula de treball o de menjador."
+      },
+      {
+        "name": "Prestatge",
+        "icon": "📚",
+        "img": "img/prestatge.png",
+        "occupiable": false,
+        "desc": "Prestatge de llibres."
+      },
+      {
+        "name": "Lavabo",
+        "icon": "🚻",
+        "img": "img/lavabo.png",
+        "occupiable": false,
+        "desc": "Lavabo del centre."
+      },
+      {
+        "name": "Màquina de cafè",
+        "icon": "☕",
+        "img": "img/maquina_cafe.png",
+        "occupiable": false,
+        "desc": "Màquina de cafè de la sala de professors."
+      },
+      {
+        "name": "Rellotge",
+        "icon": "🕐",
+        "img": "img/rellotge.png",
+        "occupiable": false,
+        "desc": "Rellotge de paret; n'hi ha un de sol."
+      }
+    ],
+    "ils": [
+      {
+        "id": "marianuria",
+        "name": "María Nuria",
+        "torn": "matí",
+        "initial": "MN",
+        "clue": "María Nuria no era mai sobre cap catifa.",
+        "solution": [
+          2,
+          0
+        ]
+      },
+      {
+        "id": "sara",
+        "name": "Sara",
+        "torn": "matí",
+        "initial": "S",
+        "clue": "Sara no era en cap cantonada de la seva sala.",
+        "solution": [
+          3,
+          6
+        ]
+      },
+      {
+        "id": "joan",
+        "name": "Joan",
+        "torn": "matí",
+        "initial": "Jn",
+        "clue": "Joan era al costat del prestatge.",
+        "solution": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": "ruth",
+        "name": "Ruth",
+        "torn": "matí",
+        "initial": "R",
+        "clue": "Ruth era al costat d'una cadira. Ruth era en una cantonada de la seva sala.",
+        "solution": [
+          4,
+          3
+        ]
+      },
+      {
+        "id": "helena",
+        "name": "Helena",
+        "torn": "matí",
+        "initial": "H",
+        "clue": "Helena seia en un banc.",
+        "solution": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "aroha",
+        "name": "Aroha",
+        "torn": "tarda",
+        "initial": "A",
+        "clue": "Aroha era al costat de la taula. Aroha no era al costat de la màquina de cafè.",
+        "solution": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": "miriam",
+        "name": "Miriam",
+        "torn": "tarda",
+        "initial": "M",
+        "clue": "Miriam era en una cantonada de la seva sala.",
+        "solution": [
+          9,
+          5
+        ]
+      },
+      {
+        "id": "tatiana",
+        "name": "Tatiana",
+        "torn": "tarda",
+        "initial": "T",
+        "clue": "Tatiana era al costat del rellotge.",
+        "solution": [
+          7,
+          1
+        ]
+      },
+      {
+        "id": "irene",
+        "name": "Irene",
+        "torn": "tarda",
+        "initial": "I",
+        "clue": "Irene era a l'INS Escola del Treball.",
+        "solution": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "laurag",
+        "name": "Laura G",
+        "torn": "tarda",
+        "initial": "LG",
+        "clue": "Laura G era al costat de la màquina de cafè.",
+        "solution": [
+          8,
+          9
+        ]
+      },
+      {
+        "id": "lauram",
+        "name": "Laura M",
+        "torn": "matí",
+        "initial": "LM",
+        "clue": "Laura M no seia mai en cap cadira.",
+        "solution": null
+      }
+    ],
+    "reveal": "L'última plaça lliure era R3 C1, al FEP Aprenents EE, sobre una cadira. María Nuria hi podia seure, i Laura M no, perquè no seia mai en cap cadira. Per això Laura M es queda sense plaça.",
+    "hints": [
+      "Joan: fixa't sobretot en «Joan era al costat del prestatge»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Joan: és a la fila 1, columna 8 (La Industrial).",
+      "Helena: fixa't sobretot en «Helena seia en un banc»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Helena: és a la fila 2, columna 3 (FEP Aprenents).",
+      "María Nuria: fixa't sobretot en «María Nuria no era mai sobre cap catifa»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "María Nuria: és a la fila 3, columna 1 (FEP Aprenents).",
+      "Sara: fixa't sobretot en «Sara no era en cap cantonada de la seva sala»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Sara: és a la fila 4, columna 7 (FP Vall d'Hebron).",
+      "Irene: fixa't sobretot en «Irene era a l'INS Escola del Treball»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Irene: és a la fila 7, columna 5 (Escola del Treball).",
+      "Tatiana: fixa't sobretot en «Tatiana era al costat del rellotge»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Tatiana: és a la fila 8, columna 2 (Inst. dels Aliments).",
+      "Laura G: fixa't sobretot en «Laura G era al costat de la màquina de cafè»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Laura G: és a la fila 9, columna 10 (Inst. de Logística).",
+      "Miriam: fixa't sobretot en «Miriam era en una cantonada de la seva sala»: amb la resta del tauler, aquesta pista ja la fixa. Mira el tauler i troba la seva casella!",
+      "Miriam: és a la fila 10, columna 6 (Inst. de Logística).",
+      "Ruth: fixa't en «Ruth era en una cantonada de la seva sala» i «Ruth era al costat d'una cadira»: creuades amb la resta del tauler, ja la fixen. Mira el tauler i troba la seva casella!",
+      "Ruth: és a la fila 5, columna 4 (Salvador Seguí).",
+      "Aroha: fixa't en «Aroha era al costat de la taula» i «Aroha no era al costat de la màquina de cafè»: creuades amb la resta del tauler, ja la fixen. Mira el tauler i troba la seva casella!",
+      "Aroha: és a la fila 6, columna 9 (Inst. de Logística).",
+      "Per acabar, la incògnita: L'última plaça lliure era R3 C1, al FEP Aprenents EE, sobre una cadira. María Nuria hi podia seure, i Laura M no, perquè no seia mai en cap cadira. Per això Laura M es queda sense plaça."
+    ]
   }
 ];

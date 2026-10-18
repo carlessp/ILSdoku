@@ -22,6 +22,7 @@ el cas. La verificació automàtica és a `tools/test_solvable.py`.
 | La sala de professors | mitjà | 8×8 | 8 | 7 | 10 |
 | La setmana cultural | difícil | 9×9 | 9 | 6 | 12 |
 | Tot el curs | difícil | 9×9 | 9 | 6 | 13 |
+| Els horaris de setembre | expert | 10×10 | 10 | 7 | 13 |
 
 ---
 
@@ -639,5 +640,72 @@ Tauler complet; en **negreta**, la ILS de cada casella (les altres caselles most
 | Laura M | LM | matí | **sense plaça** |
 
 > **Revelació:** L'última plaça lliure era R4 C9, a l'Institut dels Aliments. Oscar hi podia seure, i Laura M no, perquè no era enlloc de l'Institut dels Aliments. Per això Laura M es queda sense plaça.
+
+---
+
+## horaris-setembre — «Els horaris de setembre»
+
+- **Dificultat:** expert · **graella:** 10×10 · **13 pistes**
+- **Candidates:** 11 (10 places)
+- **Qui queda sense plaça:** **Laura M**
+
+### Centres
+
+| Centre | Zona | Fila | Columnes | Demanda |
+|---|---|---|---|---|
+| FEP Aprenents EE | Matí | 1–3 | 1–4 | 2 |
+| EA La Industrial | Matí | 1–3 | 5–10 | 1 |
+| Institut Salvador Seguí | Matí | 4–5 | 1–4 | 1 |
+| Institut d'FP Sanitària Vall d'Hebron | Matí | 4–5 | 5–10 | 1 |
+| INS Escola del Treball | Tarda | 6–7 | 1–5 | 1 |
+| Institut dels Aliments | Tarda | 8–10 | 1–5 | 1 |
+| Institut de Logística de Barcelona | Tarda | 6–10 | 6–10 | 3 |
+
+### Pistes
+
+- **Helena** (matí): Helena seia en un banc.
+- **Joan** (matí): Joan era al costat del prestatge.
+- **Laura M** (matí): Laura M no seia mai en cap cadira.
+- **María Nuria** (matí): María Nuria no era mai sobre cap catifa.
+- **Ruth** (matí): Ruth era al costat d'una cadira. Ruth era en una cantonada de la seva sala.
+- **Sara** (matí): Sara no era en cap cantonada de la seva sala.
+- **Aroha** (tarda): Aroha era al costat de la taula. Aroha no era al costat de la màquina de cafè.
+- **Irene** (tarda): Irene era a l'INS Escola del Treball.
+- **Laura G** (tarda): Laura G era al costat de la màquina de cafè.
+- **Miriam** (tarda): Miriam era en una cantonada de la seva sala.
+- **Tatiana** (tarda): Tatiana era al costat del rellotge.
+
+### Solució
+
+Tauler complet; en **negreta**, la ILS de cada casella (les altres caselles mostren l'objecte, si n'hi ha).
+
+| |C1|C2|C3|C4|C5|C6|C7|C8|C9|C10|
+|---|---|---|---|---|---|---|---|---|---|---|
+|**R1**|Cadira||||Cadira||Estoreta|**Jn**|Prestatge||
+|**R2**|||**H**|||Banc|||||
+|**R3**|**MN**||Taula|||Ordinador|Estoreta|||Catifa|
+|**R4**||||Cadira|||**S**||||
+|**R5**||||**R**|Estoreta|Pissarra|Banc|Màquina de cafè|||
+|**R6**||Banc|||||||**A**||
+|**R7**|Banc|||Banc|**I**||Estoreta|Estoreta|Taula||
+|**R8**||**T**|Rellotge||||Pissarra||||
+|**R9**||Estoreta||||||Prestatge|Màquina de cafè|**LG**|
+|**R10**|||Rellotge|Rellotge|Banc|**M**|||||
+
+| ILS | Inicial | Torn | Casella |
+|---|---|---|---|
+| María Nuria | MN | matí | R3 C1 |
+| Sara | S | matí | R4 C7 |
+| Joan | Jn | matí | R1 C8 |
+| Ruth | R | matí | R5 C4 |
+| Helena | H | matí | R2 C3 |
+| Aroha | A | tarda | R6 C9 |
+| Miriam | M | tarda | R10 C6 |
+| Tatiana | T | tarda | R8 C2 |
+| Irene | I | tarda | R7 C5 |
+| Laura G | LG | tarda | R9 C10 |
+| Laura M | LM | matí | **sense plaça** |
+
+> **Revelació:** L'última plaça lliure era R3 C1, al FEP Aprenents EE, sobre una cadira. María Nuria hi podia seure, i Laura M no, perquè no seia mai en cap cadira. Per això Laura M es queda sense plaça.
 
 ---

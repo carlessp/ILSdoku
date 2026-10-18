@@ -93,7 +93,7 @@ def main():
         print("cap acta a tools/atoms/")
         return 1
     casos = [json.load(open(p, encoding="utf-8")) for p in paths]
-    ordre = ["molt fàcil", "fàcil", "mitjà", "difícil"]
+    ordre = ["molt fàcil", "fàcil", "mitjà", "difícil", "expert"]
     casos.sort(key=lambda a: (ordre.index(a["difficulty"]), a["n"], a["id"]))
 
     doc = []

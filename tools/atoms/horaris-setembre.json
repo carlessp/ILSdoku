@@ -1,0 +1,361 @@
+{
+ "id": "horaris-setembre",
+ "title": "Els horaris de setembre",
+ "difficulty": "expert",
+ "n": 10,
+ "mati_rows": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "mode": "extended",
+ "allowed_types": [
+  "beside",
+  "cornerGrid",
+  "inCorner",
+  "notCorner",
+  "notRoom",
+  "notbeside",
+  "on",
+  "onNone",
+  "room"
+ ],
+ "centres": [
+  {
+   "id": "fep",
+   "name": "FEP Aprenents EE",
+   "short": "FEP Aprenents",
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 2
+  },
+  {
+   "id": "ind",
+   "name": "EA La Industrial",
+   "short": "La Industrial",
+   "rows": [
+    0,
+    1,
+    2
+   ],
+   "cols": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "demand": 1
+  },
+  {
+   "id": "seg",
+   "name": "Institut Salvador Seguí",
+   "short": "Salvador Seguí",
+   "rows": [
+    3,
+    4
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "demand": 1
+  },
+  {
+   "id": "fpv",
+   "name": "Institut d'FP Sanitària Vall d'Hebron",
+   "short": "FP Vall d'Hebron",
+   "rows": [
+    3,
+    4
+   ],
+   "cols": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "demand": 1
+  },
+  {
+   "id": "esc",
+   "name": "INS Escola del Treball",
+   "short": "Escola del Treball",
+   "rows": [
+    5,
+    6
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "demand": 1
+  },
+  {
+   "id": "ali",
+   "name": "Institut dels Aliments",
+   "short": "Inst. dels Aliments",
+   "rows": [
+    7,
+    8,
+    9
+   ],
+   "cols": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "demand": 1
+  },
+  {
+   "id": "log",
+   "name": "Institut de Logística de Barcelona",
+   "short": "Inst. de Logística",
+   "rows": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "cols": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "demand": 3
+  }
+ ],
+ "ils": [
+  {
+   "name": "María Nuria",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "MN"
+  },
+  {
+   "name": "Sara",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "S"
+  },
+  {
+   "name": "Joan",
+   "torn": "matí",
+   "gender": "H",
+   "initial": "Jn"
+  },
+  {
+   "name": "Ruth",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "R"
+  },
+  {
+   "name": "Helena",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "H"
+  },
+  {
+   "name": "Aroha",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "A"
+  },
+  {
+   "name": "Miriam",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "M"
+  },
+  {
+   "name": "Tatiana",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "T"
+  },
+  {
+   "name": "Irene",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "I"
+  },
+  {
+   "name": "Laura G",
+   "torn": "tarda",
+   "gender": "D",
+   "initial": "LG"
+  },
+  {
+   "name": "Laura M",
+   "torn": "matí",
+   "gender": "D",
+   "initial": "LM"
+  }
+ ],
+ "out": "Laura M",
+ "objects": {
+  "0,0": "Cadira",
+  "0,4": "Cadira",
+  "0,6": "Estoreta",
+  "0,8": "Prestatge",
+  "1,2": "Banc",
+  "1,5": "Banc",
+  "2,0": "Cadira",
+  "2,2": "Taula",
+  "2,5": "Ordinador",
+  "2,6": "Estoreta",
+  "2,9": "Catifa",
+  "3,3": "Cadira",
+  "4,4": "Estoreta",
+  "4,5": "Pissarra",
+  "4,6": "Banc",
+  "4,7": "Màquina de cafè",
+  "5,1": "Banc",
+  "6,0": "Banc",
+  "6,3": "Banc",
+  "6,6": "Estoreta",
+  "6,7": "Estoreta",
+  "6,8": "Taula",
+  "7,2": "Rellotge",
+  "7,6": "Pissarra",
+  "8,1": "Estoreta",
+  "8,7": "Prestatge",
+  "8,8": "Màquina de cafè",
+  "9,2": "Rellotge",
+  "9,3": "Rellotge",
+  "9,4": "Banc"
+ },
+ "target": {
+  "María Nuria": [
+   2,
+   0
+  ],
+  "Sara": [
+   3,
+   6
+  ],
+  "Joan": [
+   0,
+   7
+  ],
+  "Ruth": [
+   4,
+   3
+  ],
+  "Helena": [
+   1,
+   2
+  ],
+  "Aroha": [
+   5,
+   8
+  ],
+  "Miriam": [
+   9,
+   5
+  ],
+  "Tatiana": [
+   7,
+   1
+  ],
+  "Irene": [
+   6,
+   4
+  ],
+  "Laura G": [
+   8,
+   9
+  ],
+  "Laura M": null
+ },
+ "clues": [
+  {
+   "type": "beside",
+   "i": 2,
+   "obj": "Prestatge"
+  },
+  {
+   "type": "beside",
+   "i": 9,
+   "obj": "Màquina de cafè"
+  },
+  {
+   "type": "beside",
+   "i": 5,
+   "obj": "Taula"
+  },
+  {
+   "type": "inCorner",
+   "i": 6
+  },
+  {
+   "type": "beside",
+   "i": 7,
+   "obj": "Rellotge"
+  },
+  {
+   "type": "beside",
+   "i": 3,
+   "obj": "Cadira"
+  },
+  {
+   "type": "room",
+   "i": 8,
+   "cen": "esc"
+  },
+  {
+   "type": "notCorner",
+   "i": 1
+  },
+  {
+   "type": "notbeside",
+   "i": 5,
+   "obj": "Màquina de cafè"
+  },
+  {
+   "type": "onNone",
+   "i": 0,
+   "obj": "Catifa"
+  },
+  {
+   "type": "onNone",
+   "i": 10,
+   "obj": "Cadira"
+  },
+  {
+   "type": "inCorner",
+   "i": 3
+  },
+  {
+   "type": "on",
+   "i": 4,
+   "obj": "Banc"
+  }
+ ],
+ "reveal": "L'última plaça lliure era R3 C1, al FEP Aprenents EE, sobre una cadira. María Nuria hi podia seure, i Laura M no, perquè no seia mai en cap cadira. Per això Laura M es queda sense plaça."
+}

@@ -431,13 +431,15 @@ instantani, i els recomptes són idèntics (verificats també per força bruta).
 | Fàcil | 6×6 – 7×7 | 6–7 | 4–5 | + cantonades i «única ILS de la sala» |
 | Mitjà | 7×7 – 8×8 | 7–8 | 5–7 | + companyia («anava amb») i distàncies de fila/columna |
 | Difícil | 9×9 | 9 | 6 | repertori d'objectes, centre i cantonades, amb moltes candidates |
-| Expert | 10×10+ | 10+ | 7–10 | + regles generals d'escena (pendent) |
+| Expert | 10×10 | 10 | 7 | repertori d'objectes, centre i cantonades (pistes unàries) |
 
-Nota: al 9×9 les pistes de **distància** (i les de relació, com «anava amb»)
-queden fora del planter. No poden podar durant la cerca —només es comproven al
-final— i amb 10 candidates fan explotar el nombre de branques. La dificultat del
-9×9 ve de la mida, de les candidates i de la incògnita, no d'apilar tipus de
-pista. La resta de casos sí que les poden fer servir.
+Nota: als taulers grans (9×9 i 10×10) les pistes de **distància** i les de
+**relació** (com «anava amb») queden fora del planter. No poden podar durant la
+cerca —només es comproven al final— i amb 10 o 11 candidates fan explotar el
+nombre de branques: una sola consulta al solucionador pot passar de 0,04 s a més
+de tres minuts. La dificultat d'aquests casos ve de la mida, de les candidates i
+de la incògnita, no d'apilar tipus de pista. La resta de casos sí que les poden
+fer servir (per exemple «La sala de professors» amb «anava amb…»).
 
 ### 11.1 La col·lecció actual
 
@@ -459,6 +461,7 @@ revelació) és a **`ILSdoku-Casos.md`**.
 | `la-sala-de-professors` | La sala de professors | mitjà | 8×8 |
 | `setmana-cultural` | La setmana cultural | difícil | 9×9 |
 | `tot-el-curs` | Tot el curs | difícil | 9×9 |
+| `horaris-setembre` | Els horaris de setembre | expert | 10×10 |
 
 (El recompte de pistes, els centres, la solució i la revelació de cada cas són a
 `ILSdoku-Casos.md`, generat amb `tools/make_cases_doc.py`. Per refer només

@@ -180,13 +180,14 @@ resposta (vegeu `../ref/ILSdoku-Disseny.md`, §5.1).
 
 ## Estat
 
-- ✅ **Col·lecció de casos** (11): `el-primer-dia` (5×5) i `la-benvinguda` (5×5),
+- ✅ **Col·lecció de casos** (12): `el-primer-dia` (5×5) i `la-benvinguda` (5×5),
   «molt fàcil»; `lhora-del-pati` (6×6), `lhora-destudi` (6×6) i `el-forat-de-lhorari`
   (7×7), «fàcil»; `canvi-de-classe` (7×7), **`portes-obertes` (7×7)**,
   `doble-torn` (8×8) i `la-sala-de-professors` (8×8), «mitjà»; **`setmana-cultural`
-  (9×9)** i **`tot-el-curs` (9×9)**, «difícil». Els casos nous estrenen els **bancs
-  de 2×1** (objectes de més d'una casella). El selector del topbar i de la plantilla
-  els agrupa per dificultat. Detall a `../ref/ILSdoku-Casos.md`.
+  (9×9)** i **`tot-el-curs` (9×9)**, «difícil»; **`horaris-setembre` (10×10)**,
+  «expert». Els casos nous estrenen els **bancs de 2×1** (objectes de més d'una
+  casella). El selector del topbar i de la plantilla els agrupa per dificultat.
+  Detall a `../ref/ILSdoku-Casos.md`.
 - ✅ Cas de mostra «El forat de l'horari» (7×7) complet i jugable, amb **8 pistes
   d'objectes, unicitat, «al costat», lloc i negacions** (sense pistes de distància), una
   **pista negativa decisiva** per a la ILS que queda fora i una **frase de revelació**
