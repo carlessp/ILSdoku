@@ -18,8 +18,10 @@ el cas. La verificació automàtica és a `tools/test_solvable.py`.
 | El forat de l'horari | fàcil | 7×7 | 7 | 4 | 8 |
 | Canvi de classe | mitjà | 7×7 | 7 | 5 | 8 |
 | Portes obertes | mitjà | 7×7 | 7 | 5 | 8 |
+| El consell escolar | mitjà | 8×8 | 8 | 6 | 9 |
 | Doble torn | mitjà | 8×8 | 8 | 6 | 14 |
 | La sala de professors | mitjà | 8×8 | 8 | 7 | 10 |
+| L'avaluació final | difícil | 9×9 | 9 | 7 | 15 |
 | La setmana cultural | difícil | 9×9 | 9 | 6 | 12 |
 | Tot el curs | difícil | 9×9 | 9 | 6 | 13 |
 | Els horaris de setembre | expert | 10×10 | 10 | 7 | 13 |
@@ -396,6 +398,66 @@ Tauler complet; en **negreta**, la ILS de cada casella (les altres caselles most
 
 ---
 
+## consell-escolar — «El consell escolar»
+
+- **Dificultat:** mitjà · **graella:** 8×8 · **9 pistes**
+- **Candidates:** 9 (8 places)
+- **Qui queda sense plaça:** **Laura M**
+
+### Centres
+
+| Centre | Zona | Fila | Columnes | Demanda |
+|---|---|---|---|---|
+| FEP Aprenents EE | Matí | 1–2 | 1–3 | 1 |
+| Institut Salvador Seguí | Matí | 3–4 | 1–3 | 1 |
+| EA La Industrial | Matí | 1–4 | 4–8 | 2 |
+| INS Escola del Treball | Tarda | 5–6 | 1–5 | 1 |
+| Institut dels Aliments | Tarda | 7–8 | 1–5 | 1 |
+| Institut de Logística de Barcelona | Tarda | 5–8 | 6–8 | 2 |
+
+### Pistes
+
+- **Helena** (matí): Helena era al costat de la pissarra.
+- **José Javier** (matí): José Javier no era mai sobre cap catifa.
+- **Laura M** (matí): Laura M no era enlloc del FEP Aprenents EE.
+- **Marc** (matí): Marc era al costat d'una catifa.
+- **Sara** (matí): Sara era al costat d'una cadira.
+- **Aroha** (tarda): Aroha era en una cantonada del tauler.
+- **Irene** (tarda): Irene era al costat del lavabo.
+- **Laura G** (tarda): Laura G era al costat d'una estoreta.
+- **Tatiana** (tarda): Tatiana seia en una cadira.
+
+### Solució
+
+Tauler complet; en **negreta**, la ILS de cada casella (les altres caselles mostren l'objecte, si n'hi ha).
+
+| |C1|C2|C3|C4|C5|C6|C7|C8|
+|---|---|---|---|---|---|---|---|---|
+|**R1**|||**JJ**|||Màquina de cafè|||
+|**R2**|Banc|Banc||Prestatge|**S**|Cadira|Cadira||
+|**R3**|Màquina de cafè|Pissarra|||Estoreta|**Mc**|Catifa||
+|**R4**||**H**|||||||
+|**R5**|**T**|Pissarra||Banc|Banc|Rellotge|||
+|**R6**|Rellotge||||||**LG**||
+|**R7**|Màquina de cafè|Catifa|Lavabo|**I**||Lavabo|Estoreta||
+|**R8**||||||Estoreta||**A**|
+
+| ILS | Inicial | Torn | Casella |
+|---|---|---|---|
+| José Javier | JJ | matí | R1 C3 |
+| Marc | Mc | matí | R3 C6 |
+| Sara | S | matí | R2 C5 |
+| Helena | H | matí | R4 C2 |
+| Aroha | A | tarda | R8 C8 |
+| Tatiana | T | tarda | R5 C1 |
+| Irene | I | tarda | R7 C4 |
+| Laura G | LG | tarda | R6 C7 |
+| Laura M | LM | matí | **sense plaça** |
+
+> **Revelació:** L'última plaça lliure era R1 C3, al FEP Aprenents EE. José Javier hi podia seure, i Laura M no, perquè no era enlloc del FEP Aprenents EE. Per això Laura M es queda sense plaça.
+
+---
+
 ## doble-torn — «Doble torn»
 
 - **Dificultat:** mitjà · **graella:** 8×8 · **14 pistes**
@@ -514,6 +576,70 @@ Tauler complet; en **negreta**, la ILS de cada casella (les altres caselles most
 | Laura M | LM | matí | **sense plaça** |
 
 > **Revelació:** L'última plaça lliure era R1 C7, a l'Institut Salvador Seguí. José Javier hi podia seure, i Laura M no, perquè no era enlloc de l'Institut Salvador Seguí. Per això Laura M es queda sense plaça.
+
+---
+
+## avaluacio-final — «L'avaluació final»
+
+- **Dificultat:** difícil · **graella:** 9×9 · **15 pistes**
+- **Candidates:** 10 (9 places)
+- **Qui queda sense plaça:** **Laura M**
+
+### Centres
+
+| Centre | Zona | Fila | Columnes | Demanda |
+|---|---|---|---|---|
+| FEP Aprenents EE | Matí | 1–3 | 1–5 | 2 |
+| EA La Industrial | Matí | 1–3 | 6–9 | 1 |
+| Institut dels Aliments | Matí | 4–5 | 1–4 | 1 |
+| Institut Salvador Seguí | Matí | 4–5 | 5–9 | 1 |
+| INS Escola del Treball | Tarda | 6–7 | 1–5 | 1 |
+| Institut d'FP Sanitària Vall d'Hebron | Tarda | 6–7 | 6–9 | 1 |
+| Institut de Logística de Barcelona | Tarda | 8–9 | 1–9 | 2 |
+
+### Pistes
+
+- **Carla** (matí): Carla seia en un banc.
+- **José Javier** (matí): José Javier era al costat de la màquina de cafè.
+- **Judit** (matí): Judit no era mai sobre cap catifa.
+- **Laura M** (matí): Laura M no era enlloc del FEP Aprenents EE.
+- **Ruth** (matí): Ruth no era al costat de la màquina de cafè. Ruth era a l'EA La Industrial.
+- **Sara** (matí): Sara era al costat d'un banc. Sara no era en cap cantonada de la seva sala. Sara era a l'Institut dels Aliments.
+- **Aroha** (tarda): Aroha era a l'INS Escola del Treball. Aroha no era en cap cantonada de la seva sala.
+- **Irene** (tarda): Irene no era al costat del lavabo.
+- **Miriam** (tarda): Miriam era en una cantonada del tauler.
+- **Tatiana** (tarda): Tatiana no era al costat del lavabo. Tatiana no era mai sobre cap estoreta.
+
+### Solució
+
+Tauler complet; en **negreta**, la ILS de cada casella (les altres caselles mostren l'objecte, si n'hi ha).
+
+| |C1|C2|C3|C4|C5|C6|C7|C8|C9|
+|---|---|---|---|---|---|---|---|---|---|
+|**R1**||||Màquina de cafè|||**R**||Ordinador|
+|**R2**|Estoreta|||**JJ**||||Màquina de cafè||
+|**R3**|**J**|Banc||Taula|||Lavabo|Lavabo||
+|**R4**||Pissarra|||**C**|||||
+|**R5**||Banc|**S**||||Cadira|Prestatge|Rellotge|
+|**R6**||Rellotge||||**I**|Taula||Ordinador|
+|**R7**||**A**|||Rellotge|||Lavabo|Lavabo|
+|**R8**|||Estoreta|||||**T**||
+|**R9**|||Cadira||||Banc||**M**|
+
+| ILS | Inicial | Torn | Casella |
+|---|---|---|---|
+| José Javier | JJ | matí | R2 C4 |
+| Carla | C | matí | R4 C5 |
+| Judit | J | matí | R3 C1 |
+| Sara | S | matí | R5 C3 |
+| Ruth | R | matí | R1 C7 |
+| Aroha | A | tarda | R7 C2 |
+| Miriam | M | tarda | R9 C9 |
+| Tatiana | T | tarda | R8 C8 |
+| Irene | I | tarda | R6 C6 |
+| Laura M | LM | matí | **sense plaça** |
+
+> **Revelació:** L'última plaça lliure era R3 C1, al FEP Aprenents EE. Judit hi podia seure, i Laura M no, perquè no era enlloc del FEP Aprenents EE. Per això Laura M es queda sense plaça.
 
 ---
 

@@ -413,6 +413,77 @@ CASE_HORARIS = {
         "inCorner", "notCorner", "cornerGrid"},
 }
 
+# 8) 8x8 — mitjà: dues sales grans a la dreta i un passadís de columnes compartit
+CASE_CONSELL = {
+    "id": "consell-escolar",
+    "title": "El consell escolar",
+    "difficulty": "mitjà",
+    "n": 8,
+    "mati_rows": [0, 1, 2, 3],
+    "centres": [
+        {"id": "fep", "name": "FEP Aprenents EE", "short": "FEP Aprenents",
+         "rows": [0, 1], "cols": [0, 1, 2], "demand": 1},
+        {"id": "seg", "name": "Institut Salvador Seguí", "short": "Salvador Seguí",
+         "rows": [2, 3], "cols": [0, 1, 2], "demand": 1},
+        {"id": "ind", "name": "EA La Industrial", "short": "La Industrial",
+         "rows": [0, 1, 2, 3], "cols": [3, 4, 5, 6, 7], "demand": 2},
+        {"id": "esc", "name": "INS Escola del Treball", "short": "Escola del Treball",
+         "rows": [4, 5], "cols": [0, 1, 2, 3, 4], "demand": 1},
+        {"id": "ali", "name": "Institut dels Aliments", "short": "Inst. dels Aliments",
+         "rows": [6, 7], "cols": [0, 1, 2, 3, 4], "demand": 1},
+        {"id": "log", "name": "Institut de Logística de Barcelona", "short": "Inst. de Logística",
+         "rows": [4, 5, 6, 7], "cols": [5, 6, 7], "demand": 2},
+    ],
+    "ils": ils("José Javier", "Marc", "Sara", "Helena",
+               "Aroha", "Tatiana", "Irene", "Laura G", "Laura M"),
+    "out": "Laura M",
+    "seed": 313,
+    "bench_2x1": True,
+    "object_density": 0.34,
+    "object_mix": 0.5,
+    "mode": "extended",
+    "target": None,
+    "allowed_types": {  # pistes que poden podar: és el que fa viable l'8×8
+        "room", "notRoom", "on", "onNone", "beside", "notbeside",
+        "inCorner", "notCorner", "cornerGrid"},
+}
+
+# 9b) 9x9 — difícil: una sala ampla a baix de tot i quatre sales petites a dalt
+CASE_AVALUACIO = {
+    "id": "avaluacio-final",
+    "title": "L'avaluació final",
+    "difficulty": "difícil",
+    "n": 9,
+    "mati_rows": [0, 1, 2, 3, 4],
+    "centres": [
+        {"id": "fep", "name": "FEP Aprenents EE", "short": "FEP Aprenents",
+         "rows": [0, 1, 2], "cols": [0, 1, 2, 3, 4], "demand": 2},
+        {"id": "ind", "name": "EA La Industrial", "short": "La Industrial",
+         "rows": [0, 1, 2], "cols": [5, 6, 7, 8], "demand": 1},
+        {"id": "ali", "name": "Institut dels Aliments", "short": "Inst. dels Aliments",
+         "rows": [3, 4], "cols": [0, 1, 2, 3], "demand": 1},
+        {"id": "seg", "name": "Institut Salvador Seguí", "short": "Salvador Seguí",
+         "rows": [3, 4], "cols": [4, 5, 6, 7, 8], "demand": 1},
+        {"id": "esc", "name": "INS Escola del Treball", "short": "Escola del Treball",
+         "rows": [5, 6], "cols": [0, 1, 2, 3, 4], "demand": 1},
+        {"id": "fpv", "name": "Institut d'FP Sanitària Vall d'Hebron", "short": "FP Vall d'Hebron",
+         "rows": [5, 6], "cols": [5, 6, 7, 8], "demand": 1},
+        {"id": "log", "name": "Institut de Logística de Barcelona", "short": "Inst. de Logística",
+         "rows": [7, 8], "cols": [0, 1, 2, 3, 4, 5, 6, 7, 8], "demand": 2},
+    ],
+    "ils": ils("José Javier", "Carla", "Judit", "Sara", "Ruth",
+               "Aroha", "Miriam", "Tatiana", "Irene", "Laura M"),
+    "out": "Laura M",
+    "seed": 409,
+    "object_density": 0.31,
+    "object_mix": 0.5,
+    "mode": "extended",
+    "target": None,
+    "allowed_types": {  # només pistes unàries: al 9×9 són les que poden podar
+        "room", "notRoom", "on", "onNone", "beside", "notbeside",
+        "inCorner", "notCorner", "cornerGrid"},
+}
+
 CASES = [
     CASE_PRIMER_DIA,
     CASE_BENVINGUDA,
@@ -426,4 +497,6 @@ CASES = [
     CASE_GRAN,
     CASE_SETMANA,
     CASE_HORARIS,
+    CASE_CONSELL,
+    CASE_AVALUACIO,
 ]

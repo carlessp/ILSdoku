@@ -262,11 +262,11 @@ resposta (vegeu `../ref/ILSdoku-Disseny.md`, §5.1).
 
 ## Estat
 
-- ✅ **Col·lecció de casos** (12): `el-primer-dia` (5×5) i `la-benvinguda` (5×5),
-  «molt fàcil»; `lhora-del-pati` (6×6), `lhora-destudi` (6×6) i `el-forat-de-lhorari`
-  (7×7), «fàcil»; `canvi-de-classe` (7×7), **`portes-obertes` (7×7)**,
-  `doble-torn` (8×8) i `la-sala-de-professors` (8×8), «mitjà»; **`setmana-cultural`
-  (9×9)** i **`tot-el-curs` (9×9)**, «difícil»; **`horaris-setembre` (10×10)**,
+- ✅ **Col·lecció de casos** (14): `el-primer-dia` i `la-benvinguda` (5×5), «molt
+  fàcil»; `lhora-del-pati` i `lhora-destudi` (6×6) i `el-forat-de-lhorari` (7×7),
+  «fàcil»; `canvi-de-classe` i `portes-obertes` (7×7), **`consell-escolar`**,
+  `doble-torn` i `la-sala-de-professors` (8×8), «mitjà»; **`avaluacio-final`**,
+  `setmana-cultural` i `tot-el-curs` (9×9), «difícil»; `horaris-setembre` (10×10),
   «expert». Els casos nous estrenen els **bancs de 2×1** (objectes de més d'una
   casella). El selector del topbar i de la plantilla els agrupa per dificultat.
   Detall a `../ref/ILSdoku-Casos.md`.

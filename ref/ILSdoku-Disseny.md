@@ -459,8 +459,10 @@ revelació) és a **`ILSdoku-Casos.md`**.
 | `portes-obertes` | Portes obertes | mitjà | 7×7 |
 | `doble-torn` | Doble torn | mitjà | 8×8 |
 | `la-sala-de-professors` | La sala de professors | mitjà | 8×8 |
+| `consell-escolar` | El consell escolar | mitjà | 8×8 |
 | `setmana-cultural` | La setmana cultural | difícil | 9×9 |
 | `tot-el-curs` | Tot el curs | difícil | 9×9 |
+| `avaluacio-final` | L'avaluació final | difícil | 9×9 |
 | `horaris-setembre` | Els horaris de setembre | expert | 10×10 |
 
 (El recompte de pistes, els centres, la solució i la revelació de cada cas són a
