@@ -85,7 +85,7 @@
   }
   function centreLabel(r, c) {
     var ct = centreOf(r, c);
-    return ct ? (ct.short || ct.name) : "fora de centre";
+    return ct ? (ct.short || ct.name) : "passadís";
   }
 
   // ---------- Accions ----------
@@ -348,7 +348,7 @@
         // Bombolla d'ajuda: què hi ha en aquesta casella. Els elements de dins
         // (imatges, fitxes, notes, ✕) no reben el cursor, així que l'atribut va
         // a la casella.
-        var tipTxt;
+        var tipTxt = null;
         if (pid) {
           var ilTip = ilsById(pid);
           tipTxt = ilTip.name + " · " + tornLabel(ilTip.torn) + " — " + centreLabel(r, c);
@@ -362,6 +362,8 @@
                    "ja són plens.";
         } else if (ct) {
           tipTxt = centreLabel(r, c) + " · cal " + ct.demand + " ILS";
+        } else {
+          tipTxt = "Passadís (fora de centre): aquí no hi ha cap sala";
         }
         if (tipTxt) cell.dataset.tip = tipTxt;
 
